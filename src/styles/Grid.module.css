@@ -1,0 +1,39 @@
+/* Grid.module.css */
+@keyframes in {
+  from {
+    gap: 0px;
+    border-radius: 0%;
+  }
+  to {
+    gap: 1%;
+    border-radius: 20%;
+  }
+}
+
+@keyframes out {
+  from {
+    gap:1%;
+    border-radius: 20%;
+  }
+  to {
+    gap: 0px;
+    border-radius: 0%;
+  }
+}
+.gridContainer {
+    background-color: red;
+    display: grid;
+    height: 100%; width: 100%;
+    animation: none;
+    --hover: 0;
+}
+
+.gridContainer:hover{
+  animation: in .5s forwards ease-in-out;
+  --hover: 1;
+}
+.gridContainer{
+  animation: out .5s forwards;
+}
+
+
