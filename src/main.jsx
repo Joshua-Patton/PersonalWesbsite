@@ -8,7 +8,7 @@ import routes from "./routes";
 
 // CSS
 import './styles/reset.css';
-import './styles/global.css';
+
 
 // MAIN
 const router = createBrowserRouter(routes);
