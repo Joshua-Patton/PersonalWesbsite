@@ -1,0 +1,67 @@
+/* ---FONTS--- */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');/* Reenie Beanie */ 
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');/* Gravitas One */
+
+
+.Homepage {
+ background-color:rgba(0, 0, 0, 0.938);
+}
+
+
+header > nav {
+    display: flex;
+}
+header > nav > * {
+    flex: 1;
+    text-align: center;
+    padding: 1%;
+    border-left: solid 1px black ;
+    border-right: solid 1px black ;
+
+}
+
+
+
+
+.profile {
+    height: 70vh;
+
+
+    margin-right: 0%;
+    margin-left: 0%;
+
+    background-size: cover;
+    background-position: 100% 80%;
+    background-image: url('backgrounds/sunset.jpg');
+
+}
+
+
+.profile > h1{
+    mix-blend-mode: difference;
+    color: white;
+    font-weight: 900;
+    font-family: "Gravitas One";
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    font-size: 1em;
+
+    text-align: center;
+    
+}
+
+
+
+.Homepage > .main {
+    padding: 5%;
+}
+
+
+
+
+
+
+footer {
+    background-color: grey;
+}
