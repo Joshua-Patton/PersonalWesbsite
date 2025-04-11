@@ -1,8 +1,14 @@
 .title-container {
+    padding-right: 10px;
     display: flex;
     height: 100vh;
     animation: heightDecrease 3s 7s forwards;
-}   @keyframes heightDecrease {to {height: 0%;}}
+}   
+@keyframes heightDecrease {
+    to {
+        height: 0%;
+        padding-right: 0;
+    }}
 
 
 #left, #right {
@@ -48,12 +54,14 @@ p#name {
     border-color: black;
     text-justify: center;
     font-weight: 900;
-    margin-top: 5%;
+    margin-top: 2vh;
 }
 
 @keyframes titleFinish {
-    to {font-size: 4em;
-        -webkit-text-stroke: 4px white;}
+    to {font-size: 5em;
+        color: transparent;
+        -webkit-text-stroke: 4px white;
+    }
 }
 p.title-sub {
     font-size: 2em;
@@ -73,7 +81,7 @@ p#w{
         typing 1s 2s steps(14) forwards,
         cursor 0.4s 2s step-end infinite alternate,
         cursorfinish .1s 3s forwards,
-        fadeOut 2s 6s forwards
+        fadeOut 2s 7s forwards
 }
 
 p#s{
@@ -84,7 +92,7 @@ p#s{
         typing 1s 3s steps(14) forwards,
         cursor 0.4s 3s step-end infinite alternate,
         cursorfinish .1s 4s forwards,
-        fadeOut 2s 6s forwards
+        fadeOut 2s 7s forwards
 }
 
 p#m{
@@ -95,7 +103,7 @@ p#m{
         typing 1s 4s steps(15) forwards,
         cursor 0.4s 4s step-end infinite alternate,
         cursorfinish .1s 5s forwards,
-        fadeOut 2s 6s forwards
+        fadeOut 2s 7s forwards
 }
 
 p#a{
@@ -106,10 +114,16 @@ p#a{
         typing 1s 5s steps(12) forwards,
         cursor 0.4s 5s step-end infinite alternate,
         cursorfinish .1s 6s forwards,
-        fadeOut 2s 6s forwards
+        fadeOut 2s 7s forwards
 }
 
 .title-sub-container {
     width: min-content;
 }
 
+@keyframes navHeightIncrease {
+    from {height: 3em;}
+    to {
+        height: 80vh;
+    }
+}

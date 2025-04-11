@@ -3,7 +3,9 @@ import { Link, } from "react-router-dom";
 import '../styles/TitleAnimation.css';
 
 import { useState, useEffect } from "react";
-
+let handleClick = ()=>{
+    document.querySelector(".nav").style.animation = "navHeightIncrease 2s forwards"
+}
 const TitleAnimation = () => {
     const [animation, setAnimation] = useState(false);
     useEffect(() => {
@@ -24,7 +26,7 @@ const TitleAnimation = () => {
         <div className="box">
             <p className="title" id="name" 
             style={{animation: animation?"typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 7s forwards":"typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 0s forwards"}}>
-            Joshua Patton</p>
+            <Link to="/" onClick={handleClick}>Joshua Patton</Link></p>
 
             <br />
             <div className="sub-titles" style={{display: animation?"contents":"none"}}>

@@ -1,23 +1,39 @@
-import { Link, useLocation, } from "react-router-dom";
-
+// notes
+// - clean up
+// - check props for links - "useparams"
+// - try/catch errors
+import { Link, useLocation } from "react-router-dom";
+import { useRef } from "react";
 import '../styles/Nav.css';
 
-
-const Nav = () => {
+const Nav = ( {links} ) => {
+    const nav = useRef(null);
     const location = useLocation();
-    console.log(location.pathname)
+    let handleItemClick = (e)=>{
+        e.target.style.backgroundColor = "transparent";
+        if (location.pathname == "/"){
+            nav.current.style.animation = "navHeightDecrease 2s forwards";
+        }
+    }
+
+
+
     return (<>
-        <div className="nav" style={{animation: location.pathname=="/"?"":"navClick 2s forwards"}}>
-                    <Link to="projects">
-                        <div className="navItem" id="projects"><h1>Projects</h1></div>
-                    </Link>
-                    <Link  to="passions">
-                        <div id="passions" clasName="navItem" > <h1>Passions</h1> </div>
-                    </Link>
-                    <Link to="about">
-                        <div className="navItem" id="about"><h1>about</h1></div>
-                    </Link>
-                </div>
+        <div className="nav" ref={nav} 
+        style={{height: location.pathname=="/"?"80vh":"3em",}}>
+            
+            {links.map((element,index) => 
+                (
+                <Link key={index} to={element} onClick={handleItemClick} >
+                    <div className="navItem" id={element} style={{
+                        backgroundColor: location.pathname=="/"+element?"rgba(0, 0, 0, 0.356)":"white",
+                        color: location.pathname=="/"+element?"white":"black",
+                        animation: location.pathname!="/"?"navItemClick 2s forwards":"navItemClickReverse 2s forwards"
+                    }}>{element}</div>
+                </Link>
+            ))}
+        </div>
+    
     </>);
 };
 

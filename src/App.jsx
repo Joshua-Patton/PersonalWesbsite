@@ -1,29 +1,35 @@
-import { Link, } from "react-router-dom";
-import { Outlet } from "react-router-dom";
-
+import { Link, Outlet, useLocation} from "react-router-dom";
 
 import "./styles/App.css";
 
 import TitleAnimation from "./components/TitleAnimation";
 import Nav from "./components/Nav";
 
+function Footer(){
+    let location = useLocation();
+    return <div className="footer" style={{
+        display: location.pathname=="/"?"none":"block"
+    }}>
+        <p>footer
+            asd
+            asd
+        </p>
+        </div>
+}
 
 const App = () => {
-
-
-  return (
+    return (
     <>
         <div className="App">
             <TitleAnimation />
             <div className="main">
-                <Nav />
-                <div className="Outlet">
-                    <Outlet />
+                <div className="content">
+                    <Nav links={["about","projects","passions"]}/>
+                    <div className="Outlet"><Outlet /></div>
                 </div>
             </div>
-         </div>
-
-
+            {/* <Footer /> */}
+        </div>
     </>);
 };
 

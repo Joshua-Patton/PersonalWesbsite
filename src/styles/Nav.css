@@ -1,48 +1,60 @@
 .nav {
     display: flex;
-    position: relative;
-    width: 100%; height: 80%;
-    top: 15%;
-    
+    width: 100%;
+    gap: 4px;
 }
 
-#projects {
-    background-color: blue;
-    margin: 5%;
-    margin-top: 0;
-    border-radius: 10%;
-    height: 90%;
-
-}
-#passions {
-    background-color: green;
-    margin: 5%;
-    margin-top: 0;
-    border-radius: 10%;
-    height: 90%;
+@keyframes navHeightDecrease {
+    from {height: 80vh;}
+    to {
+        height: 3em;
+    }
 }
 
-#about {
-    background-color: red;
+
+.navItem{
+    color: black;
+    background-color: white;
+
     margin: 5%;
     margin-top: 0;
+    margin-bottom: 0;
     border-radius: 10%;
-    height: 90%;
 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.356)  !important;
+        color: white;
+        -webkit-text-stroke: white 1px !important;
+    }
 }
 
 .nav *{
     flex: 1;
     height: 100%;
 }
-
-
-.navItem:hover {
-    background-color: wheat !important;
-}
-
-@keyframes navClick {
+@keyframes navItemClick {
     to {
-        height: 10%;
+        border-radius: 0%;
+        margin: 0;
     }
 }
+@keyframes navItemClickReverse {
+    from {
+        border-radius: 0%;
+        margin: 0;
+    }
+    to {
+        border-radius: 10%;
+        margin: 5%;
+        margin-top: 0;
+    }
+}
+
+
