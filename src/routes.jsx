@@ -1,11 +1,15 @@
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import Passions from './pages/Passions'
-import Projects from './pages/Projects'
+
 import About from './pages/About'
 import Test from './pages/Test';
-import { Children } from 'react';
+import {Projects, ProjectFocus, Mathematics, WebDesign, SoftwareDev, DataScience} from './pages/Projects';
+import {Passions, Writings, Adventures, Personal, LearningMaterials} from './pages/Passions'
 // import components^
+
+
+import { Children } from 'react';
+
 
 const routes = [
   {
@@ -17,9 +21,26 @@ const routes = [
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "passions", element: <Passions /> },
-      { path: "projects", element: <Projects /> },
       { path: "about", element: <About /> },
+      { path: "passions",
+        element: <Passions />,
+        children:[
+          {path: "writings", element: <Writings />},
+          {path: "adventures", element: <Adventures />},
+          {path: "personal", element: <Personal />},
+          {path: "learningMaterials", element: <LearningMaterials />}
+        ]
+      },
+      { path: "projects", 
+        element: <Projects />,
+        children: [
+          {path: "mathematics", element: <Mathematics />},
+          {path: "Webdesign", element: <WebDesign />},
+          {path: "softwaredev", element: <SoftwareDev />},
+          {path: "DataScience", element: <DataScience />},
+          {path: "mathematics/:name",element: <ProjectFocus />}
+        ]
+      }
     ],
   },
 

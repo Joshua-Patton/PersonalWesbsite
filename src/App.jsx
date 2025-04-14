@@ -1,21 +1,10 @@
-import { Link, Outlet, useLocation} from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 
 import "./styles/App.css";
 
 import TitleAnimation from "./components/TitleAnimation";
 import Nav from "./components/Nav";
-
-function Footer(){
-    let location = useLocation();
-    return <div className="footer" style={{
-        display: location.pathname=="/"?"none":"block"
-    }}>
-        <p>footer
-            asd
-            asd
-        </p>
-        </div>
-}
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -26,10 +15,11 @@ const App = () => {
                 <div className="content">
                     <Nav links={["about","projects","passions"]}/>
                     <div className="Outlet"><Outlet /></div>
+                    <Footer />
                 </div>
             </div>
-            {/* <Footer /> */}
         </div>
+        
     </>);
 };
 

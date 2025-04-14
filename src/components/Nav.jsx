@@ -8,28 +8,26 @@ import '../styles/Nav.css';
 
 const Nav = ( {links} ) => {
     const nav = useRef(null);
-    const location = useLocation();
-    let handleItemClick = (e)=>{
+    const path = useLocation().pathname;
+    const pathsList = path.split("/").filter(Boolean);
+        let handleItemClick = (e)=>{
         e.target.style.backgroundColor = "transparent";
-        if (location.pathname == "/"){
-            nav.current.style.animation = "navHeightDecrease 2s forwards";
+        if (path == "/"){
+            nav.current.style.animation = "navHeightDecrease 1s forwards ease-out" ;
         }
     }
-
-
-
     return (<>
         <div className="nav" ref={nav} 
-        style={{height: location.pathname=="/"?"80vh":"3em",}}>
+        style={{height: path=="/"?"80vh":"3em",}}>
             
             {links.map((element,index) => 
                 (
                 <Link key={index} to={element} onClick={handleItemClick} >
                     <div className="navItem" id={element} style={{
-                        backgroundColor: location.pathname=="/"+element?"rgba(0, 0, 0, 0.356)":"white",
-                        color: location.pathname=="/"+element?"white":"black",
-                        animation: location.pathname!="/"?"navItemClick 2s forwards":"navItemClickReverse 2s forwards"
-                    }}>{element}</div>
+                        backgroundColor: pathsList.includes(element)?"rgba(0, 0, 0, 0.400)":"white",
+                        color: pathsList.includes(element)?"white":"black",
+                        animation: path!="/"?"navItemClick 1s forwards":"navItemClickReverse 1s forwards"
+                    }}>{element }</div>
                 </Link>
             ))}
         </div>

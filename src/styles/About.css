@@ -1,0 +1,28 @@
+
+.about li {
+    transform: translateX(20px);
+}
+
+.about {
+    line-height: 25px;
+    padding: 5%;
+    margin: 5%;
+    background-color: rgba(238, 238, 238, 0.773);
+    color: black;
+    font-family: "poppins";
+}
+.about p {
+    line-height: 20px;
+}
+.about h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-bottom: black 3px solid;
+}
+.about h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+}
+

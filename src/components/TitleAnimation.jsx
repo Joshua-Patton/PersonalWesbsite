@@ -4,7 +4,7 @@ import '../styles/TitleAnimation.css';
 
 import { useState, useEffect } from "react";
 let handleClick = ()=>{
-    document.querySelector(".nav").style.animation = "navHeightIncrease 2s forwards"
+    document.querySelector(".nav").style.animation = "navHeightIncrease 1s forwards"
 }
 const TitleAnimation = () => {
     const [animation, setAnimation] = useState(false);
@@ -36,7 +36,10 @@ const TitleAnimation = () => {
                 <div className="title-sub-container"><p className="title-sub" id="a">- adventurer</p></div>
             </div>
         </div>
-        <div id="right"></div>
+        <div id="right">
+            <a href="https://github.com/Joshua-Patton" target="_blank" rel="noopener norefferrer"><img src="src\assets\icons8-github.svg" alt="" /></a>
+            <a href="https://www.linkedin.com/in/joshua-patton-681374303/" target="_blank"rel="noopener norefferrer"><img src="src\assets\icons8-linkedin.svg" alt="" /></a>
+        </div>
     </div>
     </>);
 };
