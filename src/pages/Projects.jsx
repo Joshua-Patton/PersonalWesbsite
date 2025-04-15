@@ -1,20 +1,47 @@
 import { Link , Outlet, useParams} from "react-router-dom";
 import Nav from '../components/Nav'
+import "../styles/Projects.css"
 
 
 const projects = [
-  {tag:"Mathematics", src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"Applyigng conways game of life to a network conditions "},
-  {tag:"Mathematics", src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
-  {tag:"Mathematics", src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
-  {tag:"Mathematics", src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+  {tag:"Mathematics", 
+    Projects:[
+      { src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", 
+        descriptions:"Applyigng conways game of life to a network conditions "},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"}
+    ]
+  },
+  {tag:"webdesign", 
+    Projects:[
+      { src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", 
+        descriptions:"Applyigng conways game of life to a network conditions "},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"}
+    ]
+  },
 
-  {tag:"WebDesign", src:"src/assets/projectThumbnails/test.png", title:"testtitle", descriptions:"descriptionTest"},
+  {tag:"softwaredev", 
+    Projects:[
+      { src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", 
+        descriptions:"Applyigng conways game of life to a network conditions "},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"}
+    ]
+  },
 
-  {tag:"SoftwareDev", src:"src/assets/projectThumbnails/test.png", title:"testtitle", descriptions:"descriptionTest"},
-  {tag:"SoftwareDev", src:"src/assets/projectThumbnails/test.png", title:"testtitle", descriptions:"descriptionTest"},
-
-  {tag:"DataScience", src:"src/assets/projectThumbnails/test.png", title:"testtitle", descriptions:"descriptionTest"},
-
+  {tag:"datascience", 
+    Projects:[
+      { src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", 
+        descriptions:"Applyigng conways game of life to a network conditions "},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"},
+      {src:"src/assets/projectThumbnails/test.png", title:"Conways game of life on a network", descriptions:"descriptionTest"}
+    ]
+  },
 ]
 
 export function ProjectFocus(){
@@ -24,16 +51,27 @@ export function ProjectFocus(){
       
     </div>
 }
-
+console.log(projects);
 function ProjectsDisplay({ tag }) {
   return (
     <div className="projectsdisplay">
       {projects
-        .filter((project) => project.tag === tag) // Filter projects based on the tag
-        .map((project, index) => (
-          <Link to={project.title.replaceAll(" ","_")} key={index}><img src={project.src} alt="" /><label ><strong>{project.title}</strong><p>{project.descriptions}</p></label></Link>
+        .filter((project) => project.tag === tag)
+        .flatMap((filteredProject)=>filteredProject.Projects)
+        .map((project, index) => {
+          return(
+          <Link to={project.title.replaceAll(" ","_")} key={index}>
+            <div className="image-container">
+              <img src={project.src} alt="" />
+              <div className="hover-text">click on to see more</div>
+            </div>
+              <label >
+                <strong>{project.title}</strong>
+                <p>{project.descriptions}</p>
+            </label>
+          </Link>
 
-        ))}
+        )})}
     </div>
   );
 }

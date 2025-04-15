@@ -14,7 +14,7 @@ body, html {
 }
 
 .main {
-    background-image: url('backgrounds/clouds.jpg');
+    background-image: url('..\assets\backgrounds\clouds.jpg');
     animation: backgroundMove 100s infinite alternate;
     min-height: 100vh;
     height: auto;
@@ -39,39 +39,6 @@ body, html {
 
 
 
-.projectsdisplay img {
-    height: 180px;
-    width: 320px;
-    display: grid;
-    background-color: red;
+#writings{
+    margin-top: 4px;
 }
-.projectsdisplay {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10%;
-    row-gap: 20%;
-
-    background-color: rgba(238, 238, 238, 0.773);
-    margin: 10%;
-    margin-top: 5%;
-    padding: 5%;
-    padding-bottom: 20%;
-    color: black;
-}
-
-.projectFocus {
-    line-height: 25px;
-    padding: 5%;
-    margin: 5%;
-    background-color: rgba(238, 238, 238, 0.773);
-    color: black;
-    font-family: "poppins";
-}
-
-.projectFocus h1{
-    color: black;
-    font-family: "poppins";
-    font-size: 2.5em;
-    border-bottom: solid black 3px;
-}
-
