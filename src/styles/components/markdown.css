@@ -8,3 +8,11 @@
     color: darkblue;
     font-size: 2rem;
 }
+
+.return {
+    cursor: pointer;
+    font-size: 2em;
+    font-family: "inter";
+    position: relative;
+    transform: translate(-20px,-20px);
+}

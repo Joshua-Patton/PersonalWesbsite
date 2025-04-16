@@ -7,7 +7,7 @@ import {Projects, Mathematics, WebDesign, SoftwareDev, DataScience} from './page
 import {Passions, Writings, Adventures, Personal, LearningMaterials} from './pages/Passions'
 // import components^
 
-
+import { Navigate } from 'react-router-dom';
 import { Children } from 'react';
 import { MarkdownPage } from './components/Markdown';
 
@@ -35,6 +35,7 @@ const routes = [
       { path: "projects", 
         element: <Projects />,
         children: [
+          {index:true, element: <Navigate to="mathematics" />},
           {path: "mathematics", element: <Mathematics />},
           {path: "Webdesign", element: <WebDesign />},
           {path: "softwaredev", element: <SoftwareDev />},

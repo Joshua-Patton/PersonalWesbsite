@@ -8,15 +8,10 @@ const projects = [
     Projects:[
       { 
         title:"Conways game of life on a network",
-        thumbnail:"/src/assets/projectThumbnails/test.png",  
-        descriptions:"Applyigng conways game of life to a network conditions ",
-        md: "/src/content/test.md"
-      },
-      { 
-        title:"Conways game of life on a network",
-        thumbnail:"/src/assets/projectThumbnails/test.png",  
-        descriptions:"Applyigng conways game of life to a network conditions ",
-        md: "/src/content/test.md"
+        thumbnail:"/src/assets/projectThumbnails/conway.png", 
+        md: "/src/content/projects/conways_game_of_life.md",
+        descriptions:"Applying conways game of life to a network conditions ",
+        date:"november 2024",
       },
      ]
   },

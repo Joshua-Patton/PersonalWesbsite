@@ -1,11 +1,15 @@
 import { useEffect , useState} from "react";
-import { useLocation, Link} from "react-router-dom";
+import { useLocation, useNavigate} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import '/src/styles/components/markdown.css';
 
 export function MarkdownPage(){
-    let [content,setContent] = useState();
-    const {state} = useLocation();
+    let [content,setContent] = useState("");
+    const location = useLocation();
+    const state = location.state;
+    const path = location.pathname
+    const navigate = useNavigate();
+    console.log(location)
     useEffect(()=>{
       fetch(state.md)
       .then((response)=>response.text())
@@ -13,8 +17,10 @@ export function MarkdownPage(){
     }, [])
       return(
         <div className="page">
-          <Link to="/projects/Mathematics/">go back</Link>
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <div className="return" onClick={()=>navigate(-1)}>&#x21A9;</div>
+          <div className="markdown">
+            <ReactMarkdown>{content}</ReactMarkdown>
+          </div>
         </div>)
 }
       
