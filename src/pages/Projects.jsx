@@ -1,6 +1,6 @@
 import { Link , Outlet} from "react-router-dom";
 import Nav from '../components/Nav'
-import "../styles/Projects.css"
+import '/src/styles/pages/Projects.css';
 
 
 const projects = [
@@ -12,14 +12,21 @@ const projects = [
         descriptions:"Applyigng conways game of life to a network conditions ",
         md: "/src/content/test.md"
       },
+      { 
+        title:"Conways game of life on a network",
+        thumbnail:"/src/assets/projectThumbnails/test.png",  
+        descriptions:"Applyigng conways game of life to a network conditions ",
+        md: "/src/content/test.md"
+      },
      ]
   },
   {tag:"webdesign", 
     Projects:[
       { 
-        title:"Conways game of life on a network",
-        src:"src/assets/projectThumbnails/test.png",  
-        descriptions:"Applyigng conways game of life to a network conditions "
+        title:"This Website",
+        thumbnail:"/src/assets/projectThumbnails/test.png",  
+        descriptions:"Applyigng conways game of life to a network conditions ",
+        md: "/src/content/test.md"
       },
     ]
   },
@@ -27,9 +34,10 @@ const projects = [
   {tag:"softwaredev", 
     Projects:[
       { 
-        title:"Conways game of life on a network",
-        src:"src/assets/projectThumbnails/test.png",  
-        descriptions:"Applyigng conways game of life to a network conditions "
+        title:"Billiard Physics Simulation in C+",
+        thumbnail:"/src/assets/projectThumbnails/test.png",  
+        descriptions:"Applyigng conways game of life to a network conditions ",
+        md: "/src/content/test.md"
       },
     ]
   },
@@ -37,9 +45,10 @@ const projects = [
   {tag:"datascience", 
     Projects:[
       { 
-        title:"Conways game of life on a network",
-        src:"src/assets/projectThumbnails/test.png",  
-        descriptions:"Applyigng conways game of life to a network conditions "
+        title:"Ifixit ontology",
+        thumbnail:"/src/assets/projectThumbnails/test.png",  
+        descriptions:"Applyigng conways game of life to a network conditions ",
+        md: "/src/content/test.md"
       },
     ]
   }
@@ -54,14 +63,14 @@ function ProjectsDisplay({ tag }) {
           .flatMap((filteredProject)=>filteredProject.Projects)
           .map((project, index) => {
             return(
-            <Link to={project.title.replaceAll(" ","_")} key={index}>
+            <Link to={project.title.replaceAll(" ","_")} state={{md:project.md}} key={index}>
               <div className="image-container">
                 <img src={project.thumbnail} alt="" />
-                <div className="hover-text">click on to see more</div>
+                <div className="hover-text">click to see more</div>
               </div>
                 <label >
                   <strong>{project.title}</strong>
-                  <p>{project.descriptions}</p>
+                  <p className="description">{project.descriptions}</p>
               </label>
             </Link>
           )})}

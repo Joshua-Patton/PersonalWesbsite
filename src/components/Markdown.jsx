@@ -1,7 +1,7 @@
 import { useEffect , useState} from "react";
 import { useLocation, Link} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import "../styles/markdown.css";
+import '/src/styles/components/markdown.css';
 
 export function MarkdownPage(){
     let [content,setContent] = useState();

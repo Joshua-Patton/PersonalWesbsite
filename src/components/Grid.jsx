@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Grid.module.css';
+import styles from '/src/styles/components/Grid.module.css';
 
 const Grid = ({ rows, columns, bgSrc}) => {
   const gridStyle = {

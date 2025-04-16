@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import '../styles/Passions.css';
+import '/src/styles/pages/Passions.css';
 import Nav from '../components/Nav';
 
 

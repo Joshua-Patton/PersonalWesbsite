@@ -1,10 +1,7 @@
-// notes
-// - clean up
-// - check props for links - "useparams"
-// - try/catch errors
+
 import { Link, useLocation } from "react-router-dom";
 import { useRef } from "react";
-import '../styles/Nav.css';
+import '/src/styles/components/Nav.css';
 
 const Nav = ( {links} ) => {
     const nav = useRef(null);

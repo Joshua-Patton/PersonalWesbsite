@@ -1,6 +1,6 @@
 import { Link, } from "react-router-dom";
 
-import '../styles/TitleAnimation.css';
+import '/src/styles/components/TitleAnimation.css';
 
 import { useState, useEffect } from "react";
 let handleClick = ()=>{
@@ -37,7 +37,7 @@ const TitleAnimation = () => {
             </div>
         </div>
         <div id="right">
-            <a href="https://github.com/Joshua-Patton" target="_blank" rel="noopener norefferrer"><img src="\src\assets\icons\icons8-github.svg" alt="" /></a>
+            <a href="https://github.com/Joshua-Patton" target="_blank" rel="noopener norefferrer"><img src="/src/assets/icons/icons8-github.svg" alt="" /></a>
             <a href="https://www.linkedin.com/in/joshua-patton-681374303/" target="_blank"rel="noopener norefferrer"><img src="/src/assets/icons/icons8-linkedin.svg" alt="" /></a>
         </div>
     </div>

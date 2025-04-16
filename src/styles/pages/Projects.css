@@ -1,0 +1,57 @@
+
+.page {
+    background-color: rgba(238, 238, 238, 0.773);
+    margin: 5%;
+    margin-top: 5%;
+    padding: 5%;
+    padding-bottom: 20%;
+    color: black;
+}
+
+.projectsdisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.decription {
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+.image-container{
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+    transition: opacity 1s ease;
+
+}
+.image-container .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.608);
+    color: white;
+    font-family: "inter";
+    
+    opacity: 0;
+    transition: opacity 2s ease;
+}
