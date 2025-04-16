@@ -1,0 +1,10 @@
+.markdown {
+    font-family: "inter";
+    font-size: 16px;
+    color: #333;
+}
+
+.markdown h1 {
+    color: darkblue;
+    font-size: 2rem;
+}

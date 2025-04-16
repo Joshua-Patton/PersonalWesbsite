@@ -15,7 +15,8 @@ export function Adventures(){return (<div className="passionSection">
 </div>)}
 export function Personal(){return (<div className="passionSection">
   
-  </div>)}
+</div>)}
+
 export function LearningMaterials(){return (<div className="passionSection">
   
   </div>)}

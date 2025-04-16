@@ -40,31 +40,23 @@ const About = () => {
       <h2>Proficiencies</h2>
       <strong>Full-stack Web Development</strong>
       <p>Using React to create dynamic component structured front end. I often use BootStrap for my css, or if I want to maintain my personalisation I will create my own @media for phone usage. I have operated both node.js and flask to create both backends and API's.</p>
-      <ul>
         <li>React</li>
         <li>BootStrap</li>
         <li>Node.js/Express.js</li>
         <li>Flask</li>
-      </ul>
       <strong>Software Development</strong>
       <p>I have used C, and C++ to create fast and powerful physics simulations. I have used python for a variety of small and large applications. I have experience with Electron to create desktop apps from previous react projects.</p>
-      <ul>
         <li>C/++</li>
         <li>Python</li>
         <li>Electron</li>
-      </ul>
       <strong>Data Science</strong>
       <p>I have a working knowledge of both R and SQL, used mostly pulling for large data sets, or for other larger projects.</p>
-      <ul>
         <li>SQL</li>
         <li>R</li>
-      </ul>
       <strong>Mathematic</strong>
       <p>Basic almost daily usage of either linux or Matlab.</p>
-      <ul>
         <li>Linux</li>
         <li>Matlab</li>
-      </ul>
       <br />
       <h2>Work experience</h2>
         <strong>UX Machines</strong> - 3/24 to 9/24

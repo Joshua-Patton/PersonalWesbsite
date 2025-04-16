@@ -1,70 +1,14 @@
 
-.projectsdisplay {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10%;
-    row-gap: 20%;
-
+.page {
     background-color: rgba(238, 238, 238, 0.773);
-    margin: 10%;
+    margin: 5%;
     margin-top: 5%;
     padding: 5%;
     padding-bottom: 20%;
     color: black;
 }
 
-.projectFocus {
-    line-height: 25px;
-    padding: 5%;
-    margin: 5%;
-    background-color: rgba(238, 238, 238, 0.773);
-    color: black;
-    font-family: "poppins";
+.projectdisplay {
+    display: grid;
+    
 }
-
-.projectFocus h1{
-    color: black;
-    font-family: "poppins";
-    font-size: 2.5em;
-    border-bottom: solid black 3px;
-}
-
-
-
-.projectsdisplay .image-container {
-    height: 180px;
-    width: 320px;
-
-}
-
-
-.projectsdisplay .image-container img {
-    width: 100%;
-
-    height: 100%;
-
-}
-
-
-.projectsdisplay .image-container .hover-text {
-    display: flex;   
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transform: translateY(-183px);
-
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: black;
-    background-color: transparent;
-}
-
-.projectsdisplay .image-container:hover .hover-text{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.244);
-
-}
-
-
