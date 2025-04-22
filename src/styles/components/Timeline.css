@@ -1,0 +1,41 @@
+.timeline {
+    display: flex;
+    justify-content: center;
+    font-family: "inter";
+}
+
+#tree {
+    background-color: black;
+    width: 4px;
+}
+
+.branch {
+    width: fit-content;
+    height: 3px;
+    background-color: black;
+    padding-right: 1cm;
+}
+.branch > .date {
+    font-size: .7em;
+    width: fit-content;
+    
+
+}
+ 
+.branch[side="right"] > *{
+    
+    position: relative;
+    top: -15px;
+    left: .5cm;
+}
+.branch[side="left"] > *{
+    position: relative;
+    top: -16px;
+    right: .5cm;
+}
+
+
+.branch[branch="1"]{
+    position: relative;
+    top: 495px;
+}
