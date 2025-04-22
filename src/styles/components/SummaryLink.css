@@ -1,0 +1,14 @@
+
+.summary {
+    display: flex;   
+    border: 5px black ;
+    border-style:ridge;
+}
+.summary > .info{
+    padding-left: 10px;
+}
+
+.summary img {
+    height: 250px;
+    width: auto;
+}

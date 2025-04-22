@@ -2,7 +2,10 @@ import { Link , Outlet} from "react-router-dom";
 import Nav from '../components/Nav'
 import '/src/styles/pages/Passions.css';
 import { writings } from "/src/content/passions/writings/writings";
+import { summaries } from "../content/passions/summaries/summaries";
 
+import { Timeline } from "/src/components/Timeline";
+import { SummaryLink } from "/src/components/SummaryLink";
 
 export function Writings(){
   return <div className="writings">
@@ -10,9 +13,9 @@ export function Writings(){
         {writings.map(article => (
             <Link to={article.name} state={{md:article.md}}>
               <div className="article">
-                <span className="name">{article.name}</span>
+                <div className="name">{article.name}</div>
+                <div className="tags">{article.tags.map((element)=>(<span className="tag">{element}</span>))}</div>
                 <div className="date">{article.date}</div>
-                <div className="description">{article.description}</div>
               </div>
               <br /><br /><br />
             </Link>
@@ -25,7 +28,9 @@ export function Writings(){
 
 export function Summaries(){return <div className="summaries">
   <div className="page">
-    
+    {summaries.map(summary=>(
+      <SummaryLink summary={summary}/>
+    ))}
   </div>
 </div>
 }

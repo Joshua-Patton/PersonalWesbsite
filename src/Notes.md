@@ -5,3 +5,4 @@
 
 # ideas
 1. filter/search bar for projects/writings
+2. for markdown pages, preload link component as title from top(if no component given just leave without)

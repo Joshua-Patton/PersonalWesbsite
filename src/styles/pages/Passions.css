@@ -7,17 +7,39 @@
 }
 .writings a {
     text-decoration: none;
+    
 }
 
 .writings a:hover {
-    color: rgb(255, 255, 255) ;
+    color: rgba(0, 0, 0, 0.262) ;
+    
+
 }
 .article {
-    border: rgb(0, 0, 0) solid 1px;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
 }
 
 .article .name {
     font-size: 2em;
+}
+.article .tags {
+    text-align: center;
+    width: 100%;
+}
+
+.article .tag{
+}
+.article .tag::before{
+    content: " #";
+}
+
+
+
+
+
+.summaries > .page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1cm;
 }
