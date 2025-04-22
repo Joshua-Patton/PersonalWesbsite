@@ -4,7 +4,7 @@ import ErrorPage from './pages/ErrorPage';
 import About from './pages/About'
 import Test from './pages/Test';
 import {Projects, Mathematics, WebDesign, SoftwareDev, DataScience} from './pages/Projects';
-import {Passions, Writings, Adventures, Personal, LearningMaterials} from './pages/Passions'
+import {Passions, Writings, Summaries, Personal, Notes} from './pages/Passions'
 // import components^
 
 import { Navigate } from 'react-router-dom';
@@ -27,9 +27,11 @@ const routes = [
         element: <Passions />,
         children:[
           {path: "writings", element: <Writings />},
-          {path: "adventures", element: <Adventures />},
+          {path: "writings/:name",element: <MarkdownPage />},
+          {path: "summaries", element: <Summaries />},
+          {path: "summaries/:name",element: <MarkdownPage />},
           {path: "personal", element: <Personal />},
-          {path: "learningMaterials", element: <LearningMaterials />}
+          {path: "notes", element: <Notes />}
         ]
       },
       { path: "projects", 

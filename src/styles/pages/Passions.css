@@ -1,16 +1,23 @@
+.writings{
+    font-family: "inter";
+}
+.writings h1 {
+    font-size: 2em;
 
-.passionSection {
-    line-height: 25px;
-    padding: 5%;
-    margin: 5%;
-    background-color: rgba(238, 238, 238, 0.773);
-    color: black;
-    font-family: "poppins";
+}
+.writings a {
+    text-decoration: none;
 }
 
-.passionSection h1{
-    color: black;
-    font-family: "poppins";
-    font-size: 2.5em;
-    border-bottom: solid black 3px;
+.writings a:hover {
+    color: rgb(255, 255, 255) ;
+}
+.article {
+    border: rgb(0, 0, 0) solid 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.article .name {
+    font-size: 2em;
 }

@@ -5,9 +5,7 @@ import '/src/styles/components/markdown.css';
 
 export function MarkdownPage(){
     let [content,setContent] = useState("");
-    const location = useLocation();
-    const state = location.state;
-    const path = location.pathname
+    const {state} = useLocation();
     const navigate = useNavigate();
     console.log(location)
     useEffect(()=>{

@@ -1,12 +1,13 @@
 .markdown {
     font-family: "inter";
     font-size: 16px;
-    color: #333;
+    color: #000000;
 }
 
 .markdown h1 {
-    color: darkblue;
-    font-size: 2rem;
+    color: #1D7BBE;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .return {
@@ -14,5 +15,11 @@
     font-size: 2em;
     font-family: "inter";
     position: relative;
-    transform: translate(-20px,-20px);
+    transform: translate(-8px,-15px);
+    transition: transform 1s ease;
+}
+
+.return:hover {
+    transform: translate(-15px,-15px);
+    transition: transform 1s ease;
 }
