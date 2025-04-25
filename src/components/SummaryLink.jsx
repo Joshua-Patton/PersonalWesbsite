@@ -1,5 +1,7 @@
+import.meta.glob('/src/assets/passions/summaryThumbnails/*.png');
 import "/src/styles/components/SummaryLink.css"
 import { Link } from "react-router-dom"
+
 export function SummaryLink({summary}){
     return <div className="summary" >
         <Link to={summary.md} ><img src={summary.thumbnail} alt="" /></Link>
