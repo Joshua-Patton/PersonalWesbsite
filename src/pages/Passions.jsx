@@ -7,7 +7,6 @@ import { summaries } from "/src/content/passions/summaries/summaries";
 import { personal } from "/src/content/passions/personal/personal";
 import { notes } from "/src/content/passions/notes/notes";
 
-import { Timeline } from "/src/components/Timeline";
 import { SummaryLink } from "/src/components/SummaryLink";
 
 function DisplayArticles({subject}){

@@ -1,4 +1,4 @@
-import "../styles/components/timeline.css"
+import "/src/styles/components/Timeline.css"
 export function Timeline({height="500px"}){
     return <div className="timeline" style={{
         height: height
