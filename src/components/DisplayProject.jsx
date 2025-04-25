@@ -1,8 +1,10 @@
-import.meta.glob('/src/assets/projectThumbnails/*.png');
 import { projects } from "../content/projects/projects";
 import { Link } from "react-router-dom";
+const thumbnails = import.meta.glob('/src/assets/projectThumbnails/*.png', { eager: true });
+
 
 export default function ProjectsDisplay({ tag }) {
+    console.log(thumbnails );
     return (
       <div className="page">
         <div className="projectsdisplay">
@@ -17,7 +19,8 @@ export default function ProjectsDisplay({ tag }) {
                   key={index}
                 >
                   <div className="image-container">
-                    <img src={project.thumbnail} alt="" />
+                    
+                    <img src={thumbnails[project.thumbnail]?.default} alt="" />
                     <div className="hover-text">click to see more</div>
                   </div>
                   <label>
