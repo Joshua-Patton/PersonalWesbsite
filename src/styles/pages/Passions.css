@@ -1,21 +1,47 @@
+/* Writings */
 .writings{
+
     font-family: "inter";
 }
 .writings h1 {
     font-size: 2em;
 
 }
-.writings a {
-    text-decoration: none;
-    
+
+
+
+/* Personal */
+
+.personal {
+    .page{
+        display: flex;
+        .timeline{
+            flex: 1;
+        }
+        .other{
+            flex: 3is ;
+        }
+    }
 }
 
-.writings a:hover {
-    color: rgba(0, 0, 0, 0.262) ;
-    
 
+/* Summaries */
+.summaries > .page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
 }
+
+
+/* Article display */
+
+.articles {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .article {
+    border-bottom: solid black 1px;
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
@@ -28,18 +54,17 @@
     width: 100%;
 }
 
-.article .tag{
-}
+
 .article .tag::before{
     content: " #";
 }
+.articles a {
+    text-decoration: none;
+    
+}
 
+.articles a:hover {
+    color: rgba(0, 0, 0, 0.262) ;
+    
 
-
-
-
-.summaries > .page{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 1cm;
 }

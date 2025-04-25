@@ -6,8 +6,6 @@ const About = () => {
     <div className="about">
       <h1>about me</h1>
       <br />
-
-      <h2>Simple Facts;</h2>
         <li>I am <strong>22</strong> years old</li>
         <li>located in <strong>Perth</strong>, Western Australia</li>
         <li>Final semester at University of Western Australia<br />

@@ -1,14 +1,18 @@
 
 .summary {
     display: flex;   
-    border: 5px black ;
-    border-style:ridge;
+    border: 5px black ridge;
+    &:hover {
+        background-color: grey;
+    }
 }
 .summary > .info{
     padding-left: 10px;
 }
 
 .summary img {
+    padding: 5%;
     height: 250px;
     width: auto;
+
 }

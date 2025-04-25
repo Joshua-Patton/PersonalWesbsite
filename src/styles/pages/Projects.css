@@ -1,12 +1,4 @@
 
-.page {
-    background-color: rgba(238, 238, 238, 0.773);
-    margin: 5%;
-    margin-top: 5%;
-    padding: 5%;
-    padding-bottom: 20%;
-    color: black;
-}
 
 .projectsdisplay {
     display: grid;
@@ -54,4 +46,15 @@
     
     opacity: 0;
     transition: opacity 2s ease;
+}
+
+
+/* filter */
+.filter {
+    height: 20px;
+    margin-bottom: 3%;
+    border: blue solid 1px;
+}
+.filter *{
+    border: solid red 1px
 }

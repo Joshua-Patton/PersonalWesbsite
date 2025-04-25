@@ -1,5 +1,6 @@
 import { Link , Outlet} from "react-router-dom";
-import Nav from '../components/Nav'
+import Nav from '../components/Nav';
+import Filter from "../components/Filter";
 import '/src/styles/pages/Projects.css';
 
 
@@ -51,6 +52,7 @@ const projects = [
 
 function ProjectsDisplay({ tag }) {
   return (
+    <>
     <div className="page">
       <div className="projectsdisplay">
         {projects
@@ -71,6 +73,7 @@ function ProjectsDisplay({ tag }) {
           )})}
       </div>
     </div>
+    </>
   );
 }
 
