@@ -26,6 +26,7 @@ const routes = [
       { path: "passions",
         element: <Passions />,
         children:[
+          {index:true, element: <Navigate to="Writings"/>},
           {path: "writings", element: <Writings />},
           {path: "writings/:name",element: <MarkdownPage />},
           {path: "summaries", element: <Summaries />},
@@ -37,8 +38,8 @@ const routes = [
       { path: "projects", 
         element: <Projects />,
         children: [
-          {index:true, element: <Navigate to="mathematics" />},
-          {path: "mathematics", element: <Mathematics />},
+          {index:true, element: <Navigate to="Mathematics" />},
+          {path: "Mathematics", element: <Mathematics />},
           {path: "Webdesign", element: <WebDesign />},
           {path: "softwaredev", element: <SoftwareDev />},
           {path: "DataScience", element: <DataScience />},
