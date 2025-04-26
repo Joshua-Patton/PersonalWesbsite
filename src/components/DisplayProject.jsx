@@ -4,7 +4,6 @@ const thumbnails = import.meta.glob('/src/assets/projectThumbnails/*.png', { eag
 
 
 export default function ProjectsDisplay({ tag }) {
-    console.log(thumbnails );
     return (
       <div className="page">
         <div className="projectsdisplay">

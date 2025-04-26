@@ -1,18 +1,51 @@
 
-.summary {
-    display: flex;   
+.summary {  
+    height: 300px;
+    background-color: rgba(51, 51, 51, 0.936);
     border: 5px black ridge;
+    color: white;
+
     &:hover {
-        background-color: grey;
+        opacity: .8;
     }
 }
-.summary > .info{
-    padding-left: 10px;
+.summary a {
+    text-decoration: none;
+}
+.book {
+    display: flex; 
+}
+.summary .info{
+    color: grey;
+    padding: 1%;
+    font-size: .8rem;
+    font-family: monospace;
 }
 
 .summary img {
-    padding: 5%;
-    height: 250px;
+    max-height: 250px;
     width: auto;
+    padding: 1%;
+
+
+}
+.summary .title {
+    background-color: rgba(0, 0, 0, 0.244);
+    font-family: montserrat;
+    text-align: center;
+    font-weight: 600;
+    padding: 3%;
+    font-size: 1.5em;
+}
+
+.details {
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.description .details {
+    overflow: hidden;
+    font-size: .8rem;
 
 }
