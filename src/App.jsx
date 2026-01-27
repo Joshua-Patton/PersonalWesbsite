@@ -10,8 +10,8 @@ const App = () => {
     return (
     <>
         <div className="App">
-            <TitleAnimation />
             <div className="main">
+                <TitleAnimation />
                 <div className="content">
                     <Nav links={["about","projects","passions"]}/>
                     <div className="Outlet"><Outlet /></div>

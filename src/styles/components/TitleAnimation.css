@@ -1,13 +1,13 @@
+
 .title-container {
-    padding-right: 10px;
+    flex: 1 12 12;
     display: flex;
     height: 100vh;
     animation: heightDecrease 3s 8s forwards;
 }   
 @keyframes heightDecrease {
     to {
-        height: 0%;
-        padding-right: 0;
+        height: 20vh;
     }}
 
 
@@ -16,7 +16,6 @@
 }
 
 .box {
-    flex: 1 13ch 13ch;
     display: inline-block;
     justify-content: left;
     align-content: center;
@@ -30,7 +29,7 @@ p.title, p.title-sub{
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    font-size: 3em;
+    font-size: clamp(1rem, 7vw, 3rem);
 }
 
 
@@ -58,11 +57,13 @@ p#name {
 }
 
 @keyframes titleFinish {
-    to {font-size: 5em;
-        color: transparent;
-        -webkit-text-stroke: 4px white;
+    to {
+        font-size: clamp(1rem, 7vw, 3rem); /* responsive font size */
+
     }
 }
+
+
 p.title-sub {
     font-size: 2em;
 }
@@ -73,53 +74,6 @@ p.title-sub {
     }
 }
 
-p#w{
-    color: rgb(67, 120, 245);
-    width: 0;
-    border-color: black;
-    animation:
-        typing 1s 2s steps(14) forwards,
-        cursor 0.4s 2s step-end infinite alternate,
-        cursorfinish .1s 3s forwards,
-        fadeOut 2s 7s forwards
-}
-
-p#s{
-    color: green;
-    width: 0;
-    border-color: black;
-    animation:
-        typing 1s 3s steps(14) forwards,
-        cursor 0.4s 3s step-end infinite alternate,
-        cursorfinish .1s 4s forwards,
-        fadeOut 2s 7s forwards
-}
-
-p#m{
-    color: rgb(137, 5, 177);
-    width: 0;
-    border-color: black;
-    animation:
-        typing 1s 4s steps(15) forwards,
-        cursor 0.4s 4s step-end infinite alternate,
-        cursorfinish .1s 5s forwards,
-        fadeOut 2s 7s forwards
-}
-
-p#a{
-    color: red;
-    width: 0;
-    border-color: black;
-    animation:
-        typing 1s 5s steps(12) forwards,
-        cursor 0.4s 5s step-end infinite alternate,
-        cursorfinish .1s 6s forwards,
-        fadeOut 2s 7s forwards
-}
-
-.title-sub-container {
-    width: min-content;
-}
 
 @keyframes navHeightIncrease {
     from {height: 3em;}
@@ -128,17 +82,18 @@ p#a{
     }
 }
 
+#right {
+    display: flex;
+    justify-content: right;
+}
 .title-container img {
-    width: 22%;height: auto;
+    height: clamp(32px, 6vw, 72px);
+    width: auto;
     mix-blend-mode:difference;
     filter: invert(1);
 
 }
-.title-container>#right{
-    text-align: right;
-    padding-right: 3%;
-    padding-top: 2%;
-}
+
 
 .title-container a {
     text-decoration: none;
