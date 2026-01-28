@@ -3,7 +3,7 @@ import '/src/styles/pages/About.css'
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about page">
       <h1>about me</h1>
       <br />
         <li>I am <strong>22</strong> years old</li>

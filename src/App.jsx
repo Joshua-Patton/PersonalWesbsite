@@ -13,7 +13,7 @@ const App = () => {
             <div className="main">
                 <TitleAnimation />
                 <div className="content">
-                    <Nav links={["about","projects","passions"]}/>
+                    <Nav links={["about","projects","passions","learning"]}/>
                     <div className="Outlet"><Outlet /></div>
                     <Footer />
                 </div>

@@ -12,8 +12,7 @@ const TitleAnimation = () => {
         // Check if "firstVisit" exists in localStorage
         const isFirstVisit = sessionStorage.getItem("firstVisit");
 
-        // if (!isFirstVisit) {
-        if (isFirstVisit) {
+        if (!isFirstVisit) {
             // First instance: enable animation and save the flag
             setAnimation(true);
             sessionStorage.setItem("firstVisit", "true");
