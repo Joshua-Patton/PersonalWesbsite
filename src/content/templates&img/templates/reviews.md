@@ -1,0 +1,10 @@
+---
+thumbnail:
+type:
+title:
+author:
+rating:
+dateread:
+description:
+name:
+---

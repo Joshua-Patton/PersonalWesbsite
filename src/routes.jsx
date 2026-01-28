@@ -4,9 +4,9 @@ import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
 import Test from './pages/Test';
 import { Projects, Mathematics, WebDesign, SoftwareDev, DataScience } from './pages/Projects';
-import { Passions, Writings, Summaries, Personal, Notes } from './pages/Passions';
+import { Blog, Writings, Reviews, Art } from './pages/Blog';
 import Learning from './pages/Learning'
-// import components^
+
 
 import { Navigate } from 'react-router-dom';
 import { Children } from 'react';
@@ -25,16 +25,15 @@ const routes = [
     children: [
       { path: "about", element: <About /> },
       {
-        path: "passions",
-        element: <Passions />,
+        path: "Blog",
+        element: <Blog />,
         children: [
           { index: true, element: <Navigate to="Writings" /> },
           { path: "writings", element: <Writings /> },
           { path: "writings/:name", element: <MarkdownPage /> },
-          { path: "summaries", element: <Summaries /> },
-          { path: "summaries/:name", element: <MarkdownPage /> },
-          { path: "personal", element: <Personal /> },
-          { path: "notes", element: <Notes /> }
+          { path: "Reviews", element: <Reviews /> },
+          { path: "Reviews/:name", element: <MarkdownPage /> },
+          { path: "Art", element: <Art /> },
         ]
       },
       {
