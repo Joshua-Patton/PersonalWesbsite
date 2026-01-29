@@ -1,8 +1,11 @@
 ---
-title: bruh
+title: this website
 date:
 thumbnail: "[[test.png]]"
 description:
 name:
+tags:
+  - webdesign
+  - mathematics
 ---
-asd
+a

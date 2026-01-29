@@ -4,4 +4,5 @@ date:
 thumbnail:
 description:
 name:
+tags:
 ---

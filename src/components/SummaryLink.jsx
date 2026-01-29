@@ -1,13 +1,12 @@
 import "/src/styles/components/SummaryLink.css"
 import { Link } from "react-router-dom"
-const thumbnails = import.meta.glob('/src/assets/passions/summaryThumbnails/*.png', { eager: true });
 
-export function SummaryLink({summary}){
+export function SummaryLink({ summary }) {
     return <div className="summary" >
-        <Link to={summary.md} >
+        <Link to={summary.filename} state={{ md: summary.md }} >
             <div className="title">{summary.title}</div>
             <div className="book">
-                <img src={thumbnails[summary.thumbnail]?.default} alt="" />
+                <img src={summary.thumbnail} alt="" />
                 <div className="info">
                     <div className="type">type: <span className="details"><br />{summary.type}</span></div>
                     <div className="author">author: <span className="details"> <br />{summary.author}</span></div>

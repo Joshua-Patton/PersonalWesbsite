@@ -1,15 +1,48 @@
 {
   "projects": [
     {
-      "title": "bruh",
+      "title": "this website",
       "date": null,
-      "thumbnail": "[[test.png]]",
+      "thumbnail": "/src/content/templates&img/img/test.png",
       "description": null,
       "name": null,
-      "md": "projects/test.md"
+      "tags": [
+        "webdesign",
+        "mathematics"
+      ],
+      "md": "/src/content/projects/this website.md",
+      "filename": "this website",
+      "lastModified": 1769679646351
     }
   ],
   "art": [],
-  "reviews": [],
+  "reviews": [
+    {
+      "thumbnail": "/src/content/templates&img/img/image.webp",
+      "type": "book",
+      "title": "gods pauper",
+      "author": "Nikos Kazantzakis",
+      "rating": "3/10",
+      "dateread": null,
+      "description": "great vook",
+      "name": null,
+      "md": "/src/content/blog/reviews/Gods Pauper.md",
+      "filename": "Gods Pauper",
+      "lastModified": 1769680213529
+    },
+    {
+      "thumbnail": "/src/content/templates&img/img/image-1.webp",
+      "type": "book",
+      "title": "Papillon",
+      "author": "Henri Charriere",
+      "rating": null,
+      "dateread": null,
+      "description": null,
+      "name": null,
+      "md": "/src/content/blog/reviews/papillon.md",
+      "filename": "papillon",
+      "lastModified": 1769680191360
+    }
+  ],
   "writings": []
 }

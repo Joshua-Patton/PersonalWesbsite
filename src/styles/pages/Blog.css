@@ -10,23 +10,8 @@
 
 
 
-/* Personal */
-
-.personal {
-    .page{
-        display: flex;
-        .timeline{
-            flex: 1;
-        }
-        .other{
-            flex: 3is ;
-        }
-    }
-}
-
-
-/* Summaries */
-.summaries > .page{
+/* reviews */
+.reviews > .page{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 3%;
