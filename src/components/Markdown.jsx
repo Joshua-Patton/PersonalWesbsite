@@ -21,8 +21,12 @@ export function MarkdownPage() {
       <div className="return" onClick={() => navigate(-1)}>&#x21A9;</div>
       <div className="markdown">
         <ReactMarkdown remarkPlugins={[remarkBreaks]}>
-          {content}
+          {format(content)}
         </ReactMarkdown>
       </div>
     </div>)
+}
+
+function format(markdown) {
+  return markdown.replace(/^---[\s\S]*?---\s*/, '');
 }

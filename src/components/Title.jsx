@@ -1,7 +1,8 @@
 import { Link, } from "react-router-dom";
 
-import '/src/styles/components/TitleAnimation.css';
-
+import '/src/styles/components/Title.css';
+import githublogo from '/src/assets/icons/icons8-github.svg';
+import linkedinlogo from '/src/assets/icons/icons8-linkedin.svg';
 import { useState, useEffect } from "react";
 let handleClick = () => {
     document.querySelector(".nav").style.animation = "navHeightIncrease 1s forwards"
@@ -30,8 +31,8 @@ const TitleAnimation = () => {
                         <Link to="/" onClick={handleClick}>Joshua Patton</Link></p>
                 </div>
                 <div id="right">
-                    <a href="https://github.com/Joshua-Patton" target="_blank" rel="noopener norefferrer"><img src="/src/assets/icons/icons8-github.svg" alt="" /></a>
-                    <a href="https://www.linkedin.com/in/joshua-patton-681374303/" target="_blank" rel="noopener norefferrer"><img src="/src/assets/icons/icons8-linkedin.svg" alt="" /></a>
+                    <a href="https://github.com/Joshua-Patton" target="_blank" rel="noopener norefferrer"><img src={githublogo} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/joshua-patton-681374303/" target="_blank" rel="noopener norefferrer"><img src={linkedinlogo} alt="" /></a>
                 </div>
             </div>
         </>);
