@@ -28,7 +28,7 @@
       "name": null,
       "md": "/src/content/blog/reviews/Gods Pauper.md",
       "filename": "Gods Pauper",
-      "lastModified": 1769680213529
+      "lastModified": 1770258745590
     },
     {
       "thumbnail": "/src/content/templates&img/img/image-1.webp",
@@ -44,5 +44,16 @@
       "lastModified": 1769680191360
     }
   ],
-  "writings": []
+  "writings": [
+    {
+      "title": "jasad",
+      "date": null,
+      "tags": null,
+      "description": null,
+      "md": "/src/content/blog/writings/whatever it takes.md",
+      "thumbnail": null,
+      "filename": "whatever it takes",
+      "lastModified": 1770258711734
+    }
+  ]
 }

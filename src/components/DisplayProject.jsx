@@ -1,11 +1,10 @@
 import content from "../content/content.json";
 const projects = content["projects"]
-console.log("projects:", projects);
-
+const imgUrl = new URL('./assets/img.png', import.meta.url).href
 
 import { Link } from "react-router-dom";
 // const thumbnails = import.meta.glob('/src/assets/projectThumbnails/*.png', { eager: true });
-const contentFolderPath = "../content/"
+
 
 export default function ProjectsDisplay({ tag }) {
   return (
@@ -14,7 +13,6 @@ export default function ProjectsDisplay({ tag }) {
         {projects
           .filter((project) => project.tags?.includes(tag))
           .map((project, index) => {// match "myimage.jpg"
-            console.log("working until this point")
             return (
 
               <Link
@@ -28,13 +26,15 @@ export default function ProjectsDisplay({ tag }) {
                   <div className="hover-text">click to see more</div>
                 </div>
                 <label>
-                  <strong>{project.title}</strong>
-                  <p className="description">{project.descriptions}</p>
+                  <p className="description">
+                    <strong>{project.title}</strong>
+                    {project.descriptions}
+                  </p>
                 </label>
               </Link>
             );
           })}
       </div>
-    </div>
+    </div >
   );
 }

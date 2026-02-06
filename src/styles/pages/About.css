@@ -26,3 +26,45 @@
 
 }
 
+.aboutme {
+    display: flex;
+    align-items: center; /* vertically center content on desktop */
+    gap: 2rem;           /* space between image and text */
+}
+
+/* Make direct children take equal space */
+.aboutme > * {
+    flex: 1;
+}
+
+/* Image styling */
+.aboutme img {
+    width: 20vw;        /* 20% of viewport width on desktop */
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* centers image in its flex column */
+}
+
+/* Mobile: stack column, image first */
+@media (max-width: 768px) {
+    .aboutme {
+        flex-direction: column; /* stack children vertically */
+    }
+
+    .aboutme img {
+        width: 50vw;          /* larger relative size on mobile */
+        margin: 0 auto 1rem;  /* centers image and adds bottom spacing */
+    }
+
+    .aboutme p {
+        text-align: left;     /* keeps text left-aligned on mobile */
+    }
+}
+
+
+
+.aboutme-photo figcaption {
+text-align: center;
+  font-size: 0.6rem;
+  color: #555;
+}

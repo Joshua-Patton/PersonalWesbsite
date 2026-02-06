@@ -16,9 +16,9 @@ import { SummaryLink } from "/src/components/SummaryLink";
 function DisplayArticles({ subject }) {
   return <div className="articles">
     {subject.map((article) => (
-      <Link key={article.name + article.date} to={article.name} state={{ md: article.md }} >
+      <Link key={article.filename + article.date} to={article.filename.replaceAll(" ", "_")} state={{ md: article.md }} >
         <div className="article">
-          <div className="name">{article.title}</div>
+          <div className="name">{article.filename}</div>
           <div className="tags">
             {article.tags?.map((element, index) => (<span key={index} className="tag">{element}</span>))}
           </div>

@@ -3,7 +3,7 @@ import ErrorPage from './pages/ErrorPage';
 
 import About from './pages/About';
 import Test from './pages/Test';
-import { Projects, Mathematics, WebDesign, SoftwareDev, DataScience } from './pages/Projects';
+import { Projects, Mathematics, Programming, Data} from './pages/Projects';
 import { Blog, Writings, Reviews, Art } from './pages/Blog';
 import Learning from './pages/Learning'
 
@@ -42,9 +42,8 @@ const routes = [
         children: [
           { index: true, element: <Navigate to="Mathematics" /> },
           { path: "Mathematics", element: <Mathematics /> },
-          { path: "Webdesign", element: <WebDesign /> },
-          { path: "softwaredev", element: <SoftwareDev /> },
-          { path: "DataScience", element: <DataScience /> },
+          { path: "Programming", element: <Programming /> },
+          { path: "Data", element: <Data /> },
           { path: ":category/:name", element: <MarkdownPage /> }
         ]
       },

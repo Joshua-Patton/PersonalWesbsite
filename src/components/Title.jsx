@@ -1,13 +1,16 @@
 import { Link, } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import '/src/styles/components/Title.css';
+
 import githublogo from '/src/assets/icons/icons8-github.svg';
 import linkedinlogo from '/src/assets/icons/icons8-linkedin.svg';
-import { useState, useEffect } from "react";
+
+
 let handleClick = () => {
     document.querySelector(".nav").style.animation = "navHeightIncrease 1s forwards"
 }
-const TitleAnimation = () => {
+const Title = () => {
     const [animation, setAnimation] = useState(false);
     useEffect(() => {
         // Check if "firstVisit" exists in localStorage
@@ -38,4 +41,4 @@ const TitleAnimation = () => {
         </>);
 };
 
-export default TitleAnimation;
+export default Title;

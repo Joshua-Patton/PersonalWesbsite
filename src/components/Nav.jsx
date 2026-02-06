@@ -17,8 +17,8 @@ const Nav = ( {links} ) => {
         <div className="nav" ref={nav} 
         style={{height: path=="/"?"80vh":"3em",}}>
             
-            {links.map((element,index) => 
-                (
+            {links.map((element,index) =>
+                (    
                 <Link key={index} to={element} onClick={handleItemClick} >
                     <div className="navItem" id={element} style={{
                         backgroundColor: pathsList.includes(element)?"rgba(0, 0, 0, 0.400)":"white",

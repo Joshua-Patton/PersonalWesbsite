@@ -1,23 +1,22 @@
-import { Link , Outlet} from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Nav from '../components/Nav';
 import Filter from "../components/Filter";
 import '/src/styles/pages/Projects.css';
 import ProjectsDisplay from "../components/DisplayProject";
 
 
-export function Mathematics(){return <ProjectsDisplay tag="mathematics" />}
-export function WebDesign(){return <ProjectsDisplay tag="webdesign" />}
-export function SoftwareDev(){return <ProjectsDisplay tag="softwaredev" />}
-export function DataScience(){return <ProjectsDisplay tag="datascience" />}
+export function Mathematics() { return <ProjectsDisplay tag="mathematics" /> }
+export function Data() { return <ProjectsDisplay tag="data" /> }
+export function Programming() { return <ProjectsDisplay tag="programming" /> }
 
 const Projects = () => {
   return (
     <div>
-        <Nav links={["Mathematics","WebDesign","SoftwareDev","DataScience"]}/>
-        <Outlet />
+      <Nav links={["Mathematics", "Programming", "Data"]} />
+      <Outlet />
 
     </div>
   );
 };
 
-export {Projects};
+export { Projects };

@@ -1,36 +1,32 @@
-
-
-.projectsdisplay {
+    .projectsdisplay {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.decription {
-    text-decoration: none !important;
-}
-
-
-
-
-
 
 .image-container{
+    border-radius: 20px;
     width: 80%;
     height: auto;
     position: relative;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+
 }
 
 .image-container img {
+    border-radius: 20px;
     height: 100%;
     width: 100%;
 }
 
 .image-container:hover .hover-text {
+    border-radius: 20px;
     opacity: 1;
     transition: opacity 1s ease;
 
 }
 .image-container .hover-text {
+    border-radius: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,5 +52,5 @@
     border: blue solid 1px;
 }
 .filter *{
-    border: solid red 1px
+    border: solid red 1px;
 }

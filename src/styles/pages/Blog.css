@@ -47,10 +47,9 @@
 .articles a {
     text-decoration: none;
     
+    
 }
 
 .articles a:hover {
     color: rgba(0, 0, 0, 0.262) ;
-    
-
 }
