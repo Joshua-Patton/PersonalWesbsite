@@ -3,7 +3,7 @@
     {
       "title": "this website",
       "date": null,
-      "thumbnail": "/src/content/templates&img/img/conway.png",
+      "thumbnail": "image.webp",
       "description": null,
       "name": null,
       "tags": [
@@ -12,7 +12,7 @@
       ],
       "md": "/src/content/projects/this website.md",
       "filename": "this website",
-      "lastModified": 1770118033312
+      "lastModified": 1770354889750
     }
   ],
   "art": [],

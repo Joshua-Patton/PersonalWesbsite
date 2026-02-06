@@ -1,13 +1,13 @@
 ---
 title: this website
 date:
-thumbnail: "[[conway.png]]"
+thumbnail: "[[image.webp]]"
 description:
 name:
 tags:
   - webdesign
   - mathematics
 ---
-aasdas dasd
+aasdas dasdasd
 # asdsa
 asdsadsa
