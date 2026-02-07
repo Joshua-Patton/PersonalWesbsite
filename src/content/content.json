@@ -18,7 +18,7 @@
       "title": "this website",
       "date": null,
       "thumbnail": "image.webp",
-      "description": null,
+      "description": "the bird flew close",
       "name": null,
       "tags": [
         "webdesign",
@@ -39,7 +39,7 @@
       ],
       "md": "/src/content/projects/test2.md",
       "filename": "test2",
-      "lastModified": 1770380870393
+      "lastModified": 1770430629695
     }
   ],
   "art": [],

@@ -8,16 +8,20 @@ export function MarkdownPage() {
   const { state } = useLocation();
   const navigate = useNavigate();
 
-  const content = state?.md ?? "";
-
+  const content = state?.content ?? "";
+  const project = state?.project ?? "";
   return (
     <div className="page">
       <div className="return" onClick={() => navigate(-1)}>
         &#x21A9;
       </div>
-
+      <div className="heading">
+        <h1 className="title">{project.title}</h1><br />
+        <div className="date">{project.date}</div> <hr />
+      </div>
       <div className="markdown">
         <ReactMarkdown
+
           remarkPlugins={[remarkBreaks]}
           components={{
             img({ src, alt }) {

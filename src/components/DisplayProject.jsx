@@ -3,7 +3,6 @@ const projects = content["projects"]
 import { getImage, getProjectMd } from "../utility/import";
 
 import { Link } from "react-router-dom";
-// const thumbnails = import.meta.glob('/src/assets/projectThumbnails/*.png', { eager: true });
 
 
 export default function ProjectsDisplay({ tag }) {
@@ -17,7 +16,10 @@ export default function ProjectsDisplay({ tag }) {
 
               <Link
                 to={project.filename?.replaceAll(" ", "_")}
-                state={{ md: getProjectMd(project.md) }}
+                state={{
+                  content: getProjectMd(project.md),
+                  project: project
+                }}
                 key={index}
               >
                 <div className="image-container">
@@ -27,8 +29,7 @@ export default function ProjectsDisplay({ tag }) {
                 </div>
                 <label>
                   <p className="description">
-                    <strong>{project.title}</strong>
-                    {project.descriptions}
+                    <strong>{project.description}</strong><br />
                   </p>
                 </label>
               </Link>
