@@ -18,7 +18,7 @@ export default function ProjectsDisplay({ tag }) {
                 to={project.filename?.replaceAll(" ", "_")}
                 state={{
                   content: getProjectMd(project.md),
-                  project: project
+                  frontmatter: project
                 }}
                 key={index}
               >

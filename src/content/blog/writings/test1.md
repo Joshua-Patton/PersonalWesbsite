@@ -1,9 +1,9 @@
 ---
 title: testttt1
-date:
+date: 2002-10-10
 tags:
   - writings
-description:
+description: yadyaydyays
 ---
 asdasda
 dsadas

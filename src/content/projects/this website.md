@@ -11,4 +11,4 @@ tags:
 aasdas dasdasd
 # asdsa
 asdsadsa
-[[image.webp]]
+![](../templates&img/img/image-2.we

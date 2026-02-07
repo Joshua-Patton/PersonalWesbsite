@@ -30,7 +30,8 @@ export function getBlogMd(filepath) {
         return null;
     }
 
-    return blogMd[key]; // ✅ raw markdown string
+
+    return blogMd[key];
 }
 
 const projectMd = import.meta.glob('../content/projects/**/*.md', {

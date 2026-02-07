@@ -13,18 +13,16 @@
 /* reviews */
 .reviews > .page{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 3%;
-    padding-right:4%;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 1rem;
+    place-items: center;
+
 }
 
 
 /* Article display */
 
-.articles {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 
 .article {
     border-bottom: solid black 1px;

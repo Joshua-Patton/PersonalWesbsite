@@ -14,20 +14,21 @@ export function MarkdownPage() {
   const navigate = useNavigate();
 
   const content = state?.content ?? "";
-  const project = state?.project ?? "";
+  const frontmatter = state?.frontmatter ?? "";
+
   return (
     <div className="page">
-      <div className="return" onClick={() => navigate(-1)}>
-        &#x21A9;
-      </div>
-      <div className="heading">
-        <h1 className="title">{project.title}</h1><br />
-        <div className="date">{project.date}</div> <hr />
-      </div>
       <div className="markdown">
+        <div className="return" onClick={() => navigate(-1)}>
+          &#x21A9;
+        </div>
+        <div className="heading">
+          <h1 className="title">{frontmatter.title}</h1><br />
+          <div className="date">{frontmatter.date}</div> <hr />
+        </div>
         <ReactMarkdown
 
-          remarkPlugins={[remarkBreaks,remarkMath]}
+          remarkPlugins={[remarkBreaks, remarkMath]}
           rehypePlugins={[rehypeKatex]}
           components={{
             img({ src, alt }) {
@@ -52,5 +53,5 @@ export function MarkdownPage() {
 //remove frontmatter
 // imgs
 function preprocess(markdown) {
-  return markdown.replace(/^---[\s\S]*?---\s*/, "").replace(/\[\[(.*?)\]\]/g, `![image]($1)`);
+  return markdown.replace(/^---[\s\S]*?---\s*/, "").replace(/\[\[(.*?)\]\]/g, `![$1]($1)`);
 }
