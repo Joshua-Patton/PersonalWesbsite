@@ -1,8 +1,13 @@
 import { useLocation, useNavigate } from "react-router-dom";
+
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
+
 import "/src/styles/components/markdown.css";
 import { getImage } from "../utility/import";
+import "katex/dist/katex.min.css";
 
 export function MarkdownPage() {
   const { state } = useLocation();
@@ -22,7 +27,8 @@ export function MarkdownPage() {
       <div className="markdown">
         <ReactMarkdown
 
-          remarkPlugins={[remarkBreaks]}
+          remarkPlugins={[remarkBreaks,remarkMath]}
+          rehypePlugins={[rehypeKatex]}
           components={{
             img({ src, alt }) {
               return (

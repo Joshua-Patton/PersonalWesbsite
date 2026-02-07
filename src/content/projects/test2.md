@@ -26,4 +26,6 @@ tags:
 *italic*
 ~~cstrike~~
 
-$$math^2$$
+$$
+math^2
+$$
