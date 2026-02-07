@@ -9,15 +9,29 @@ export function getImage(filename) {
 
 
 
-const blogMd = import.meta.glob('/src/content/blog/**/*.{md}', {
+const blogMd = import.meta.glob('../content/blog/**/*.md', {
     eager: true,
+    query: '?raw',
     import: 'default',
 });
 
 export function getBlogMd(filepath) {
-    return blogMd[filepath];
-}
+    if (!filepath) return null;
 
+    // Normalize path (JSON usually stores full /src/... paths)
+    const normalized = filepath.replace(/^\/?src\//, '');
+
+    const key = Object.keys(blogMd).find(k =>
+        k.endsWith(normalized.replace('content/', ''))
+    );
+
+    if (!key) {
+        console.warn('Markdown not found:', filepath);
+        return null;
+    }
+
+    return blogMd[key]; // ✅ raw markdown string
+}
 
 const projectMd = import.meta.glob('../content/projects/**/*.md', {
     eager: true,

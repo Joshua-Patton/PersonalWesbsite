@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
 import "/src/styles/components/markdown.css";
+import { getImage } from "../utility/import";
 
 export function MarkdownPage() {
   const { state } = useLocation();
@@ -16,14 +17,30 @@ export function MarkdownPage() {
       </div>
 
       <div className="markdown">
-        <ReactMarkdown remarkPlugins={[remarkBreaks]}>
-          {stripFrontmatter(content)}
+        <ReactMarkdown
+          remarkPlugins={[remarkBreaks]}
+          components={{
+            img({ src, alt }) {
+              return (
+                <img
+                  src={getImage(src)}
+                  alt={alt}
+                  loading="lazy"
+                />
+              );
+            }
+          }}
+        >
+          {preprocess(content)}
         </ReactMarkdown>
       </div>
-    </div>
+    </div >
   );
 }
 
-function stripFrontmatter(markdown) {
-  return markdown.replace(/^---[\s\S]*?---\s*/, "");
+
+//remove frontmatter
+// imgs
+function preprocess(markdown) {
+  return markdown.replace(/^---[\s\S]*?---\s*/, "").replace(/\[\[(.*?)\]\]/g, `![image]($1)`);
 }

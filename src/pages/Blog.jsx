@@ -10,13 +10,13 @@ const reviews = content["reviews"]
 
 
 import { SummaryLink } from "/src/components/SummaryLink";
-
+import { getBlogMd } from "../utility/import";
 
 
 function DisplayArticles({ subject }) {
   return <div className="articles">
     {subject.map((article) => (
-      <Link key={article.filename + article.date} to={article.filename.replaceAll(" ", "_")} state={{ md: article.md }} >
+      <Link key={article.filename + article.date} to={article.filename.replaceAll(" ", "_")} state={{ md: getBlogMd(article.md) }} >
         <div className="article">
           <div className="name">{article.filename}</div>
           <div className="tags">
