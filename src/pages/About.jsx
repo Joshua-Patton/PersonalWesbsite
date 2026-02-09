@@ -28,7 +28,7 @@ const About = () => {
           <p> I’m interested in mathematical modelling, simulation, and software that explains or explores complex ideas.
             I enjoy building things - web apps, tools, and learning-focused software that sit between theory, code, and solving practical real world problems.
             Outside of technical work, I value maintaining balance across the health of my body, mind, and spirit.
-            <br />I'm motivated in writing a worthy life-story through experience and intention.</p>
+            <br />I try to live with intention and act in experience.</p>
         </div>
         <div className="aboutme-photo">
           <img src={photoMe} alt="" />

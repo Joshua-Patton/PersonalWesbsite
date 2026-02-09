@@ -6,6 +6,7 @@
     background-color: rgba(51, 51, 51, 0.936);
     border: 5px black ridge;
     color: white;
+    border-radius: 20px;
 
 }
 .summary a {
@@ -26,7 +27,7 @@
 .summary img {
     max-height: clamp(150px,200px,300px);
     width: auto;
-    padding: 1%;
+    padding: 10%;
 }
 .summary .title {
     background-color: rgba(0, 0, 0, 0.244);
@@ -38,6 +39,7 @@
 }
 
 .details {
+    padding-top: 10%;
     color: white;
     font-family: monospace;
     font-size: clamp(0.5rem,.8rem,1rem);

@@ -1,6 +1,20 @@
 {
   "projects": [],
   "art": [],
-  "reviews": [],
+  "reviews": [
+    {
+      "thumbnail": "image.webp",
+      "type": "book",
+      "title": "gods pauper",
+      "author": "Nikos Kazantzakis",
+      "rating": "3/10",
+      "dateread": null,
+      "description": "great vook",
+      "name": null,
+      "md": "/src/content/blog/reviews/Gods_Pauper.md",
+      "filename": "Gods Pauper",
+      "lastModified": 1770258745590
+    }
+  ],
   "writings": []
 }

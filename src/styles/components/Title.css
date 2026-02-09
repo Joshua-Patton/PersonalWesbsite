@@ -99,3 +99,24 @@ p.title-sub {
     text-decoration: none;
 }
 
+
+
+iframe {
+  position: fixed;
+  bottom: 5vh;
+  left: 0;
+  width: 360px;
+  height: 80px;
+  opacity: 100%;
+  transform: translateX(calc(-100% + 40px)); /* hides all but 40px */
+  transition: transform 1s ease;
+  z-index: 1000; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+  opacity: 75%;
+}
+
+iframe:hover {
+    transform: translateX(0);
+    opacity: 100%;
+    transition: transform 2s ease;
+}
