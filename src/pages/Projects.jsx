@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import Nav from '../components/Nav';
-import Filter from "../components/Filter";
+import { Filter } from "../components/Filter";
 import '/src/styles/pages/Projects.css';
 import ProjectsDisplay from "../components/DisplayProject";
 
@@ -13,6 +13,7 @@ const Projects = () => {
   return (
     <div>
       <Nav links={["Mathematics", "Programming", "Data"]} />
+      <Filter />
       <Outlet />
 
     </div>
