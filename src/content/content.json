@@ -1,5 +1,19 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "title": "asd",
+      "date": "0011-11-11",
+      "thumbnail": "image.webp",
+      "description": null,
+      "name": "asda",
+      "tags": [
+        "mathematics"
+      ],
+      "md": "/src/content/projects/test 1.md",
+      "filename": "test 1",
+      "lastModified": 1770991646978
+    }
+  ],
   "art": [],
   "reviews": [
     {
@@ -12,6 +26,19 @@
       "description": "great vook",
       "name": null,
       "md": "/src/content/blog/reviews/Gods_Pauper.md",
+      "filename": "Gods Pauper",
+      "lastModified": 1770258745590
+    },
+    {
+      "thumbnail": "image.webp",
+      "type": "book",
+      "title": "gods pauper",
+      "author": "Nikos Kazantzakis",
+      "rating": "3/10",
+      "dateread": null,
+      "description": "great vook",
+      "name": null,
+      "md": "/src/content/blog/reviews/Gods Pauper.md",
       "filename": "Gods Pauper",
       "lastModified": 1770258745590
     }

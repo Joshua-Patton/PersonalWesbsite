@@ -2,7 +2,7 @@
 .filter {
   width: 100%;
   padding: 16px;
-  background-color: rgba(121, 71, 71, 0);  
+  background-color: rgba(49, 46, 46, 0);  
   display: flex;
   flex-direction: column;
   gap: 12px; /* space between search and filters */
@@ -31,14 +31,13 @@
 }
 
 .searchbar input[type="text"]:focus {
-  border-color: #0077ff;
-  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0);
 }
 
 /* Search button */
 .searchbar button.search {
   padding: 0 16px;
-  background-color: #0077ff;
+  background-color: #2f303210;
   color: white;
   border: none;
   border-radius: 8px;
@@ -48,7 +47,7 @@
 }
 
 .searchbar button.search:hover {
-  background-color: #005fcc;
+  background-color: rgba(18, 21, 18, 0.05);
   transform: scale(1.05);
 }
 

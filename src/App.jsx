@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 
 import "./styles/App.css";
+import "./styles/fonts.css";
 
 import Title from "./components/Title";
 import Nav from "./components/Nav";

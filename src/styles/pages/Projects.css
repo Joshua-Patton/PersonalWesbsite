@@ -1,3 +1,6 @@
+
+
+
 .projectsdisplay {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,11 +67,13 @@
 }
 
 
-.description {
+label #project-title{
     display: absolute;
     transform: translate(0, -25px);
+    font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
+
 
 .image-container::after {
     content: "";
@@ -85,12 +90,8 @@
 label {
     display: flex;
     justify-content: center;
+    font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 
-
-.filter {
-    background-color: blue;
-    height: 100px;
-}

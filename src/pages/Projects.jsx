@@ -1,20 +1,30 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useOutletContext } from "react-router-dom";
 import Nav from '../components/Nav';
 import { Filter } from "../components/Filter";
 import '/src/styles/pages/Projects.css';
 import ProjectsDisplay from "../components/DisplayProject";
+import { useState } from "react";
 
-
-export function Mathematics() { return <ProjectsDisplay tag="mathematics" /> }
-export function Data() { return <ProjectsDisplay tag="data" /> }
-export function Programming() { return <ProjectsDisplay tag="programming" /> }
-
+export function Mathematics() {
+  const { searchQuery } = useOutletContext();
+  return <ProjectsDisplay tag="mathematics" searchQuery={searchQuery} />;
+}
+export function Programming() {
+  const { searchQuery } = useOutletContext();
+  return <ProjectsDisplay tag="Programming" searchQuery={searchQuery} />;
+}
+export function Data() {
+  const { searchQuery } = useOutletContext();
+  return <ProjectsDisplay tag="Data" searchQuery={searchQuery} />;
+}
 const Projects = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <div>
       <Nav links={["Mathematics", "Programming", "Data"]} />
-      <Filter />
-      <Outlet />
+      <Filter query={searchQuery} onQueryChange={setSearchQuery} />
+      <Outlet context={{ searchQuery }} />
 
     </div>
   );
