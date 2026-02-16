@@ -1,77 +1,134 @@
-
-.summary {  
-    height: auto;
-    width: clamp(100px,90%,100%);
-    position: relative;
-    background-color: rgba(51, 51, 51, 0.936);
-    border: 5px black ridge;
-    color: white;
-    border-radius: 20px;
-
+/* =========================
+   GRID CONTAINER
+========================= */
+.summaries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
 }
+
+/* =========================
+   SUMMARY CARD
+========================= */
+.summary {
+    background-color: rgba(51, 51, 51, 0.94);
+    border: 3px solid black;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.summary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   LINK WRAPPER
+========================= */
 .summary a {
     text-decoration: none;
-}
-.book {
-    display: flex; 
-    max-width: clamp(150px,200px,300px);
-    
-}
-.summary .info{
-    color: grey;
-    padding: 1%;
-    font-size: clamp(0.3rem,.7rem,8rem);
-    font-family: monospace;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.summary img {
-    max-height: clamp(150px,200px,300px);
-    width: auto;
-    padding: 10%;
-}
+/* =========================
+   TITLE BAR
+========================= */
 .summary .title {
-    background-color: rgba(0, 0, 0, 0.244);
-    font-family: montserrat;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 600;
-    padding: 3%;
-    font-size: 1.5em;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   BOOK SECTION
+========================= */
+.book {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Thumbnail */
+.summary img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Info */
+.summary .info {
+    flex: 1;
+    color: #ccc;
+    font-size: 0.85rem;
+    font-family: monospace;
+    text-align: left;
 }
 
 .details {
-    padding-top: 10%;
-    color: white;
+    color: #fff;
     font-family: monospace;
-    font-size: clamp(0.5rem,.8rem,1rem);
+    font-size: 0.85rem;
 }
 
-.description .details {
-    font-size: clamp(0.5rem,.8rem,1rem);
-
-}
-
-
-
-
-.summary:hover .hover-text {
-    opacity: 1;
-    transition: opacity 1s ease;
-
-}
+/* =========================
+   HOVER OVERLAY
+========================= */
 .summary .hover-text {
-    height: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.608);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    font-family: "inter";
-    
+    font-family: "Inter", sans-serif;
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 0.3s ease;
+}
+
+.summary:hover .hover-text {
+    opacity: 1;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+
+    .summaries {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .book {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .summary img {
+        max-width: 120px;
+    }
+
+    .summary .info {
+        text-align: center;
+    }
 }

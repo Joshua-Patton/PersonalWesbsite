@@ -11,11 +11,11 @@ export function Mathematics() {
 }
 export function Programming() {
   const { searchQuery } = useOutletContext();
-  return <ProjectsDisplay tag="Programming" searchQuery={searchQuery} />;
+  return <ProjectsDisplay tag="programming" searchQuery={searchQuery} />;
 }
 export function Data() {
   const { searchQuery } = useOutletContext();
-  return <ProjectsDisplay tag="Data" searchQuery={searchQuery} />;
+  return <ProjectsDisplay tag="data" searchQuery={searchQuery} />;
 }
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState("");

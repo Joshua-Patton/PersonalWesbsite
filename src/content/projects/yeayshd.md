@@ -1,10 +1,10 @@
 ---
 title: asd
-date: 0011-11-11
+date:
 thumbnail: "[[image.webp]]"
 description:
-name: asda
+name:
 tags:
-  - mathematics
+  - data
 ---
-test 1
+asdasdasd

@@ -4,13 +4,14 @@ export function Filter({ query, onQueryChange }) {
     return (
         <div className="filter">
             <div className="searchbar">
+                <img src={searchlogo} alt="" />
                 <input
                     type="text"
                     value={query}
                     onChange={e => onQueryChange(e.target.value)}
                     placeholder="Search projects..."
                 />
-                <button className="search"><img src={searchlogo} alt="" /></button>
+
             </div>
         </div>
     );

@@ -1,65 +1,43 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useOutletContext } from "react-router-dom";
 import Nav from '../components/Nav'
 import '/src/styles/pages/Blog.css';
+import { useState } from "react";
+import { Filter } from "../components/Filter";
+
 
 import content from "/src/content/content.json";
 const writings = content["writings"]
 const art = content["art"]
 const reviews = content["reviews"]
 
-
-
-import { SummaryLink } from "/src/components/SummaryLink";
-import { getBlogMd } from "../utility/import";
-
-
-function DisplayArticles({ subject }) {
-  return <div className="articles">
-    {subject.map((article) => (
-
-      < Link key={article.filename + article.date} to={article.filename.replaceAll(" ", "_")}
-        state={{
-          content: getBlogMd(article.md),
-          frontmatter: article
-        }} >
-        <div className="article">
-          <div className="name">{article.filename}</div>
-          <div className="tags">
-            {article.tags?.map((element, index) => (<span key={index} className="tag">{element}</span>))}
-          </div>
-          <div className="date">{article.date}</div>
-        </div>
-      </Link>
-    ))
-    }
-  </div >
-}
-
-
+import { DisplaySummaries } from "../components/DisplaySummaries";
+import { DisplayArticle } from "../components/DisplayArticle";
 
 export function Writings() {
+  const { searchQuery } = useOutletContext();
   return <div className="writings">
     <div className="page">
-      <DisplayArticles subject={writings} />
+      <DisplayArticle subject={writings} searchQuery={searchQuery} />
     </div>
   </div>
 }
-
 
 export function Reviews() {
+  const { searchQuery } = useOutletContext();
   return <div className="reviews">
     <div className="page">
-      {reviews.map(summary => (
-        <SummaryLink key={summary.title + summary.author} summary={summary} />
-      ))}
+      <DisplaySummaries subject={reviews} searchQuery={searchQuery}/>
     </div>
   </div>
 }
 
+
+
 export function Art() {
+  const { searchQuery } = useOutletContext();
   return <div className="art">
     <div className="page">
-      <DisplayArticles subject={art} />
+      <DisplayArticle subject={art} searchQuery={searchQuery} />
     </div>
   </div>
 }
@@ -67,10 +45,12 @@ export function Art() {
 
 
 export const Blog = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <div>
       <Nav links={["Writings", "Reviews", "Art"]} />
-      <Outlet />
+      <Filter query={searchQuery} onQueryChange={setSearchQuery} />
+      <Outlet context={{ searchQuery }} />
     </div>
   );
 };
