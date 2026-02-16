@@ -6,9 +6,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
     const query = searchQuery.toLowerCase();
 
     const filteredSummaries = subject
-        // filter by tag if provided
         .filter(summary => tag ? summary.tags?.includes(tag) : true)
-        // filter by search query across multiple fields
         .filter(summary => {
             const filename = summary.filename?.toLowerCase() || "";
             const author = summary.author?.toLowerCase() || "";
@@ -39,29 +37,46 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
                             content: getBlogMd(summary.md),
                             frontmatter: summary
                         }}
+                        className="card-link"
                     >
                         <div className="title">{summary.filename}</div>
+
                         <div className="book">
-                            <img src={getImage(summary.thumbnail)} alt="" />
+                            <img
+                                src={getImage(summary.thumbnail)}
+                                alt={`${summary.filename} cover`}
+                                className="cover"
+                            />
+
                             <div className="info">
-                                <div className="info-type">
-                                    type: <span className="details">{summary.type}</span>
+                                <div className="info-row">
+                                    <span className="label">Type</span>
+                                    <span className="value">{summary.type}</span>
                                 </div>
-                                <div className="info-author">
-                                    author: <span className="details">{summary.author}</span>
+
+                                <div className="info-row">
+                                    <span className="label">Author</span>
+                                    <span className="value">{summary.author}</span>
                                 </div>
-                                <div className="info-rating">
-                                    rating: <span className="details">{summary.rating}</span>
+
+                                <div className="info-row">
+                                    <span className="label">Rating</span>
+                                    <span className="value">{summary.rating}</span>
                                 </div>
-                                <div className="info-dateRead">
-                                    date read: <span className="details">{summary.dateread}</span>
+
+                                <div className="info-row">
+                                    <span className="label">Date</span>
+                                    <span className="value">{summary.dateread}</span>
                                 </div>
-                                <div className="info-description">
-                                    description: <br />
-                                    <span className="details">{summary.description}</span>
+
+                                <div className="description">
+                                    {summary.description}
                                 </div>
                             </div>
-                            <div className="hover-text">click to read more</div>
+
+                            <div className="hover-text">
+                                Click to read →
+                            </div>
                         </div>
                     </Link>
                 </div>

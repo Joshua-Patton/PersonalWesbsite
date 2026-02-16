@@ -1,7 +1,8 @@
 ---
-date:
 thumbnail:
+type:
+author:
+rating:
+date:
 description:
-tags:
-  - mathematics
 ---
