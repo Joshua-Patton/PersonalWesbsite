@@ -35,7 +35,14 @@ export function DisplayArticle({ subject, searchQuery }) {
                                     <span key={idx} className="tag">{element}</span>
                                 ))}
                             </div>
-                            <div className="date">{article.date}</div>
+                            <div className="date">
+                                {new Date(article.date).toLocaleDateString(undefined, {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                })}
+                            </div>
+
                         </div>
                     </Link>
                 ))}

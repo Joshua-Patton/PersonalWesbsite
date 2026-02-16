@@ -9,44 +9,75 @@
       "rating": "9/10",
       "date": "October 2026",
       "description": "Fictionalised biography of Francis of Assisi.",
-      "name": null,
       "md": "/src/content/blog/reviews/God's Pauper.md",
       "filename": "God's Pauper",
-      "lastModified": 1771239745682
+      "lastModified": 1771257134111
     },
     {
-      "thumbnail": null,
+      "thumbnail": "image-7.webp",
+      "type": "book",
+      "author": "Miguel de Cervantes",
+      "rating": "9/10",
+      "date": null,
+      "description": "Episodic journeys of a self-deluded 'knight' and his gullible side-kick",
+      "md": "/src/content/blog/reviews/Don Quixote.md",
+      "filename": "Don Quixote",
+      "lastModified": 1771257320907
+    },
+    {
+      "thumbnail": "image-8.webp",
       "type": null,
-      "author": null,
+      "author": "Edward O. Wilson",
       "rating": null,
       "date": null,
       "description": null,
-      "md": "/src/content/blog/reviews/book2.md",
-      "filename": "book2",
-      "lastModified": 1771236363739
+      "md": "/src/content/blog/reviews/Consilience.md",
+      "filename": "Consilience",
+      "lastModified": 1771257435371
     },
     {
-      "thumbnail": null,
-      "type": null,
-      "author": null,
+      "thumbnail": "image-10.webp",
+      "type": "book",
+      "author": "G.I Gurdjieff",
       "rating": null,
       "date": null,
       "description": null,
-      "md": "/src/content/blog/reviews/Untitled.md",
-      "filename": "Untitled",
-      "lastModified": 1771236392739
+      "md": "/src/content/blog/reviews/Meetings with Remarkable Men.md",
+      "filename": "Meetings with Remarkable Men",
+      "lastModified": 1771258130205
     },
     {
-      "thumbnail": null,
+      "thumbnail": "image-11.webp",
       "type": null,
-      "author": null,
+      "author": "Don Miguel Ruiz",
       "rating": null,
       "date": null,
       "description": null,
-      "md": "/src/content/blog/reviews/book3.md",
-      "filename": "book3",
-      "lastModified": 1771236389461
+      "md": "/src/content/blog/reviews/The four Agreements.md",
+      "filename": "The four Agreements",
+      "lastModified": 1771257625164
     }
   ],
-  "writings": []
+  "writings": [
+    {
+      "date": null,
+      "tags": [
+        "writings"
+      ],
+      "description": null,
+      "md": "/src/content/blog/writings/Man is not the same for long.md",
+      "filename": "Man is not the same for long",
+      "lastModified": 1771258175558
+    },
+    {
+      "date": "1111-11-11",
+      "tags": [
+        "mysticism"
+      ],
+      "description": null,
+      "md": "/src/content/blog/writings/Gurdjieff and otherwise.md",
+      "filename": "Gurdjieff and otherwise",
+      "lastModified": 1771258558168
+    }
+  ]
 }

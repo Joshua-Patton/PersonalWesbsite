@@ -53,5 +53,5 @@ export function MarkdownPage() {
 //remove frontmatter
 // imgs
 function preprocess(markdown) {
-  return markdown.replace(/^---[\s\S]*?---\s*/, "").replace(/\[\[(.*?)\]\]/g, `![$1]($1)`);
+  return markdown.replace(/^---[\s\S]*?---\s*/, "").replace(/\[\[(.*?)\]\]/g, `[$1]($1)`);
 }

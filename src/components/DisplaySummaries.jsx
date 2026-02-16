@@ -30,7 +30,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
     return (
         <div className="summaries">
             {filteredSummaries.map((summary, index) => (
-                <div className="summary" key={index}>
+                <div className="summary" key={index + summary.author + summary.title}>
                     <Link
                         to={summary.filename?.replaceAll(" ", "_")}
                         state={{

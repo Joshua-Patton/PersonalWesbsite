@@ -3,7 +3,7 @@
 .return {
     cursor: pointer;
     font-size: 2em;
-    font-family: "inter";
+    font-family: "inter","Montserrat";
     position: relative;
     transform: translate(-8px,-15px);
     transition: transform 1s ease;
@@ -17,10 +17,11 @@
 
 /* Base container */
 .markdown {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;  
   line-height: 1.6;
   word-break: break-word;
+  padding: 3rem;
 }
 
 /* Headings — thematic */
@@ -168,4 +169,11 @@
     );
     color: white;
     letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .markdown {
+      padding: 1em;
+    }
 }

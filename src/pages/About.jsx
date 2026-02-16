@@ -16,7 +16,7 @@ const About = () => {
       <div className="aboutme">
 
         <div className="introduction">
-          <li>I am <strong>    <span
+          <li>I am exactly<strong>    <span
             className="age"
             style={{ width: `${String(age()).length}ch` }}
           >
