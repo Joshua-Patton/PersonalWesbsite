@@ -15,8 +15,10 @@
 /* Search bar wrapper */
 .searchbar {
   display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 8px;
-  width: 100%;
+
 }
 
 /* Search input field */
@@ -28,6 +30,8 @@
   border-radius: 8px;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 50vw;
 }
 
 .searchbar input[type="text"]:focus {
@@ -83,7 +87,8 @@
   }
 
   .searchbar {
-    flex-direction: column;
+
+    align-items: center;
   }
 
   .searchbar button.search {
@@ -93,4 +98,6 @@
 
 .searchbar img{
   filter: invert();
+  justify-content: center;
+  max-width: fit-content;
 }

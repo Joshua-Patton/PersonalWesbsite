@@ -4,7 +4,7 @@
 .summaries {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 2rem;
     box-sizing: border-box;
 }
@@ -13,20 +13,22 @@
    SUMMARY CARD
 ========================= */
 .summary {
-    background-color: rgba(51, 51, 51, 0.94);
-    border: 3px solid black;
-    border-radius: 15px;
-    color: white;
+    background: linear-gradient(145deg, #484646d1, #151515);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    color: #eaeaea;
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
     position: relative;
     width: 100%;
     box-sizing: border-box;
+    backdrop-filter: blur(6px);
 }
 
 .summary:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* =========================
@@ -44,12 +46,14 @@
    TITLE BAR
 ========================= */
 .summary .title {
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.03);
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-weight: 600;
-    padding: 0.75rem;
-    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* =========================
@@ -59,8 +63,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1.25rem;
+    padding: 1.25rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -69,21 +73,22 @@
 .summary img {
     max-width: 150px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 12px;
     flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 /* Info */
 .summary .info {
     flex: 1;
-    color: #ccc;
+    color: #bdbdbd;
     font-size: 0.85rem;
     font-family: monospace;
-    text-align: left;
+    line-height: 1.5;
 }
 
 .details {
-    color: #fff;
+    color: #ffffff;
     font-family: monospace;
     font-size: 0.85rem;
 }
@@ -97,9 +102,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: rgba(10, 10, 10, 0.8);
+    color: #ffffff;
     font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -115,7 +122,7 @@
 
     .summaries {
         padding: 1rem;
-        gap: 1rem;
+        gap: 1.25rem;
     }
 
     .book {

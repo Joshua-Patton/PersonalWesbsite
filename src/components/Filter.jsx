@@ -9,7 +9,7 @@ export function Filter({ query, onQueryChange }) {
                     type="text"
                     value={query}
                     onChange={e => onQueryChange(e.target.value)}
-                    placeholder="Search projects..."
+                    placeholder="Search either title, date, tags..."
                 />
 
             </div>
