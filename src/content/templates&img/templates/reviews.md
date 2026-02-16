@@ -1,10 +1,8 @@
 ---
 thumbnail:
 type:
-title:
 author:
 rating:
-dateread:
+date:
 description:
-name:
 ---

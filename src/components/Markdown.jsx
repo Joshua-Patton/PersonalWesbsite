@@ -23,7 +23,7 @@ export function MarkdownPage() {
           &#x21A9;
         </div>
         <div className="heading">
-          <h1 className="title">{frontmatter.title}</h1><br />
+          <h1 className="title">{frontmatter.filename}</h1><br />
           <div className="date">{frontmatter.date}</div> <hr />
         </div>
         <ReactMarkdown

@@ -10,7 +10,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
         .filter(summary => tag ? summary.tags?.includes(tag) : true)
         // filter by search query across multiple fields
         .filter(summary => {
-            const title = summary.title?.toLowerCase() || "";
+            const filename = summary.filename?.toLowerCase() || "";
             const author = summary.author?.toLowerCase() || "";
             const type = summary.type?.toLowerCase() || "";
             const rating = summary.rating?.toLowerCase() || "";
@@ -19,7 +19,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
             const tags = summary.tags?.map(t => t.toLowerCase()) || [];
 
             return (
-                title.includes(query) ||
+                filename.includes(query) ||
                 author.includes(query) ||
                 type.includes(query) ||
                 rating.includes(query) ||
@@ -40,7 +40,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
                             frontmatter: summary
                         }}
                     >
-                        <div className="title">{summary.title}</div>
+                        <div className="title">{summary.filename}</div>
                         <div className="book">
                             <img src={getImage(summary.thumbnail)} alt="" />
                             <div className="info">

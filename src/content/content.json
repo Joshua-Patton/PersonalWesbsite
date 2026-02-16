@@ -1,46 +1,42 @@
 {
   "projects": [
     {
-      "title": "asd",
       "date": null,
-      "thumbnail": "image.webp",
+      "thumbnail": null,
       "description": null,
-      "name": null,
       "tags": [
-        "data"
+        "mathematics"
       ],
-      "md": "/src/content/projects/yeayshd.md",
-      "filename": "yeayshd",
-      "lastModified": 1771225448541
+      "md": "/src/content/projects/test 1.md",
+      "filename": "test 1",
+      "lastModified": 1771228101613
     }
   ],
   "art": [],
   "reviews": [
     {
-      "thumbnail": "image.webp",
+      "thumbnail": "image-4.webp",
       "type": "book",
-      "title": "gods pauper",
       "author": "Nikos Kazantzakis",
-      "rating": "3/10",
-      "dateread": null,
-      "description": "great vook",
+      "rating": "9/10",
+      "date": "October 2026",
+      "description": null,
       "name": null,
-      "md": "/src/content/blog/reviews/Gods Pauper.md",
-      "filename": "Gods Pauper",
-      "lastModified": 1770258745590
+      "md": "/src/content/blog/reviews/God's Pauper.md",
+      "filename": "God's Pauper",
+      "lastModified": 1771228046165
     }
   ],
   "writings": [
     {
-      "title": "yayay",
-      "date": "0011-11-11",
+      "date": null,
       "tags": [
         "writings"
       ],
-      "description": "asasdas",
-      "md": "/src/content/blog/writings/test1.md",
-      "filename": "test1",
-      "lastModified": 1771222626752
+      "description": null,
+      "md": "/src/content/blog/writings/test writings.md",
+      "filename": "test writings",
+      "lastModified": 1771228104250
     }
   ]
 }
