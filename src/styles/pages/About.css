@@ -28,7 +28,7 @@
 
 .aboutme {
     display: flex;
-    align-items: center; /* vertically center content on desktop */
+    align-items: center;; /* vertically center content on desktop */
     gap: 2rem;           /* space between image and text */
 }
 
@@ -39,10 +39,11 @@
 
 /* Image styling */
 .aboutme img {
-    width: 20vw;        /* 20% of viewport width on desktop */
+    width: 21vw;        /* 20% of viewport width on desktop */
     height: auto;
     display: block;
-    margin: 0 auto;     /* centers image in its flex column */
+    margin: 0 auto;  
+    overflow: visible;   /* centers image in its flex column */
 }
 
 /* Mobile: stack column, image first */

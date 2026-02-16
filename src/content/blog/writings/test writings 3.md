@@ -1,6 +1,0 @@
----
-date:
-tags:
-  - writings
-description:
----
