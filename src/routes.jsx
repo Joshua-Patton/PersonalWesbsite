@@ -3,14 +3,15 @@ import ErrorPage from './pages/ErrorPage';
 
 import About from './pages/About';
 import Test from './pages/Test';
-import { Projects, Mathematics, Programming, Data} from './pages/Projects';
+import { Projects } from './pages/Projects';
 import { Blog, Writings, Reviews, Art } from './pages/Blog';
 import Learning from './pages/Learning'
 
-
+import DisplayProject from './components/DisplayProject';
 import { Navigate } from 'react-router-dom';
 import { Children } from 'react';
 import { MarkdownPage } from './components/Markdown';
+import { DisplaySummaries } from './components/DisplaySummaries';
 
 
 const routes = [
@@ -38,15 +39,13 @@ const routes = [
       },
       {
         path: "projects",
-        element: <Projects />,
+        element: <Projects />, // the wrapper with filter & grid
         children: [
-          { index: true, element: <Navigate to="Mathematics" /> },
-          { path: "Mathematics", element: <Mathematics /> },
-          { path: "Programming", element: <Programming /> },
-          { path: "Data", element: <Data /> },
-          { path: ":category/:name", element: <MarkdownPage /> }
+          { index: true, element: <DisplayProject /> }, // default child: show all projects
+          { path: ":name", element: <MarkdownPage /> }  // show a single project when clicked
         ]
       },
+
       {
         path: "Learning",
         element: <Learning />,

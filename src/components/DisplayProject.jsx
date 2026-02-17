@@ -2,16 +2,17 @@ import content from "../content/content.json";
 const projects = content["projects"]
 import { getImage, getProjectMd } from "../utility/import";
 import { Link } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 
-export default function ProjectsDisplay({ tag, searchQuery }) {
+export default function ProjectsDisplay({ tag }) {
+  const { searchQuery = "" } = useOutletContext();
   const query = searchQuery.toLowerCase();
   return (
     <div className="page">
       <div className="projectsdisplay">
 
         {projects
-          .filter(project => project.tags?.includes(tag))
           .filter(project => {
             const title = project.filename?.toLowerCase() || "";
             const date = project.date?.toLowerCase() || "";

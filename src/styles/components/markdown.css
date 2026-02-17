@@ -21,7 +21,7 @@
   font-size: 16px;  
   line-height: 1.6;
   word-break: break-word;
-  padding: 3rem;
+
 }
 
 /* Headings — thematic */
@@ -176,4 +176,8 @@
     .markdown {
       padding: 1em;
     }
+}
+.markdown .content {
+  padding: 3em;
+  padding-top: 0;
 }

@@ -59,7 +59,7 @@
     align-items: center;
 
     background-color: rgba(0, 0, 0, 0.608);
-    color: white;
+    color: rgb(253, 253, 242);
     font-family: "inter";
 
     opacity: 0;
@@ -69,8 +69,9 @@
 
 label #project-title{
     display: absolute;
-    transform: translate(0, -25px);
+    transform: translate(0, -21px);
     font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 
 }
 
@@ -82,7 +83,7 @@ label #project-title{
     bottom: 0;
     width: 100%;
     height: 15%;
-    background: white;
+    background: rgb(250, 250, 245);
     /* or any color */
     pointer-events: none;
 }

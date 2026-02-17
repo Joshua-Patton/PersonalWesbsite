@@ -26,24 +26,26 @@ export function MarkdownPage() {
           <h1 className="title">{frontmatter.filename}</h1><br />
           <div className="date">{frontmatter.date}</div> <hr />
         </div>
-        <ReactMarkdown
+        <div className="content">
+          <ReactMarkdown
 
-          remarkPlugins={[remarkBreaks, remarkMath]}
-          rehypePlugins={[rehypeKatex]}
-          components={{
-            img({ src, alt }) {
-              return (
-                <img
-                  src={getImage(src)}
-                  alt={alt}
-                  loading="lazy"
-                />
-              );
-            }
-          }}
-        >
-          {preprocess(content)}
-        </ReactMarkdown>
+            remarkPlugins={[remarkBreaks, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+            components={{
+              img({ src, alt }) {
+                return (
+                  <img
+                    src={getImage(src)}
+                    alt={alt}
+                    loading="lazy"
+                  />
+                );
+              }
+            }}
+          >
+            {preprocess(content)}
+          </ReactMarkdown>
+        </div>
       </div>
     </div >
   );

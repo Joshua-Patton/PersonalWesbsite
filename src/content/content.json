@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "date": null,
+      "thumbnail": null,
+      "description": null,
+      "tags": [
+        "asdasd"
+      ],
+      "md": "/src/content/projects/asdasd.md",
+      "filename": "asdasd",
+      "lastModified": 1771289409044
+    }
+  ],
   "art": [],
   "reviews": [
     {
@@ -7,11 +19,11 @@
       "type": "book",
       "author": "Nikos Kazantzakis",
       "rating": "9/10",
-      "date": "October 2026",
+      "date": null,
       "description": "Fictionalised biography of Francis of Assisi.",
       "md": "/src/content/blog/reviews/God's Pauper.md",
       "filename": "God's Pauper",
-      "lastModified": 1771257134111
+      "lastModified": 1771259171249
     },
     {
       "thumbnail": "image-7.webp",

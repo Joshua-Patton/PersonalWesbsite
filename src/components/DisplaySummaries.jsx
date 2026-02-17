@@ -12,7 +12,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
             const author = summary.author?.toLowerCase() || "";
             const type = summary.type?.toLowerCase() || "";
             const rating = summary.rating?.toLowerCase() || "";
-            const dateRead = summary.dateread?.toLowerCase() || "";
+            const date = summary.date?.toLowerCase() || "";
             const description = summary.description?.toLowerCase() || "";
             const tags = summary.tags?.map(t => t.toLowerCase()) || [];
 
@@ -66,7 +66,12 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
 
                                 <div className="info-row">
                                     <span className="label">Date</span>
-                                    <span className="value">{summary.dateread}</span>
+                                    <span className="value">
+                                        {new Date(summary.date).toLocaleDateString(undefined, {
+                                            year: 'numeric',
+                                            month: 'short',
+                                            day: 'numeric'
+                                        })}</span>
                                 </div>
 
                                 <div className="description">
