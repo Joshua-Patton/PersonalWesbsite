@@ -171,13 +171,19 @@
     letter-spacing: 0.5px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .markdown {
-      padding: 1em;
-    }
-}
+
 .markdown .content {
   padding: 3em;
   padding-top: 0;
+}
+.markdown .heading .date{
+  position: absolute;
+  right: 10vw;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .markdown .content {
+      padding: 1em;
+      padding-top: 0;
+    }
 }

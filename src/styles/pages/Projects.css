@@ -1,6 +1,3 @@
-
-
-
 .projectsdisplay {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,8 +66,8 @@
 
 label #project-title{
     display: absolute;
-    transform: translate(0, -21px);
-    font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translate(0, clamp(-25px,-23px,-20px));
+    font-family: "Montserrat", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: uppercase;
 
 }

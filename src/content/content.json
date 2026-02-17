@@ -1,15 +1,17 @@
 {
   "projects": [
     {
-      "date": null,
-      "thumbnail": null,
+      "date": "2025-10-25",
+      "thumbnail": "image-13.webp",
       "description": null,
       "tags": [
-        "asdasd"
+        "gametheory",
+        "math",
+        "simulation"
       ],
-      "md": "/src/content/projects/asdasd.md",
-      "filename": "asdasd",
-      "lastModified": 1771289409044
+      "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs.md",
+      "filename": "Conway's Game of Life on dynamic Graphs",
+      "lastModified": 1771303618582
     }
   ],
   "art": [],
@@ -19,11 +21,11 @@
       "type": "book",
       "author": "Nikos Kazantzakis",
       "rating": "9/10",
-      "date": null,
+      "date": "2026-10-10",
       "description": "Fictionalised biography of Francis of Assisi.",
       "md": "/src/content/blog/reviews/God's Pauper.md",
       "filename": "God's Pauper",
-      "lastModified": 1771259171249
+      "lastModified": 1771292533777
     },
     {
       "thumbnail": "image-7.webp",
@@ -68,28 +70,30 @@
       "md": "/src/content/blog/reviews/The four Agreements.md",
       "filename": "The four Agreements",
       "lastModified": 1771257625164
+    },
+    {
+      "thumbnail": "image-12.webp",
+      "type": null,
+      "author": "Earl Nightingale",
+      "Genre": "Self-help/philosophy",
+      "date": null,
+      "description": null,
+      "md": "/src/content/blog/reviews/The Strangest Secret.md",
+      "filename": "The Strangest Secret",
+      "lastModified": 1771301923652
     }
   ],
   "writings": [
     {
-      "date": null,
+      "date": "2026-02-17",
       "tags": [
-        "writings"
+        "philosophy",
+        "psycology",
+        "life"
       ],
-      "description": null,
-      "md": "/src/content/blog/writings/Man is not the same for long.md",
-      "filename": "Man is not the same for long",
-      "lastModified": 1771258175558
-    },
-    {
-      "date": "1111-11-11",
-      "tags": [
-        "mysticism"
-      ],
-      "description": null,
-      "md": "/src/content/blog/writings/Gurdjieff and otherwise.md",
-      "filename": "Gurdjieff and otherwise",
-      "lastModified": 1771258558168
+      "md": "/src/content/blog/writings/Man is not the same for long - thoughts on change and identity.md",
+      "filename": "Man is not the same for long - thoughts on change and identity",
+      "lastModified": 1771302969806
     }
   ]
 }

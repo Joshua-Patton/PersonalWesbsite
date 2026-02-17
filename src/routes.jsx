@@ -4,7 +4,7 @@ import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
 import Test from './pages/Test';
 import { Projects } from './pages/Projects';
-import { Blog, Writings, Reviews, Art } from './pages/Blog';
+import { Blog, Writings, Reviews } from './pages/Blog';
 import Learning from './pages/Learning'
 
 import DisplayProject from './components/DisplayProject';
@@ -12,13 +12,9 @@ import { Navigate } from 'react-router-dom';
 import { Children } from 'react';
 import { MarkdownPage } from './components/Markdown';
 import { DisplaySummaries } from './components/DisplaySummaries';
-
+import { Art } from './pages/Art';
 
 const routes = [
-  {
-    path: "test",
-    element: <Test />
-  },
   {
     path: "/",
     element: <App />,

@@ -3,8 +3,7 @@
 const Learning = () => {
   return (
     <div className="page">
-      <h1>learning page</h1>
-
+      in works - coming soon
     </div>
   );
 };

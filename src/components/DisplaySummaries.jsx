@@ -6,7 +6,6 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
     const query = searchQuery.toLowerCase();
 
     const filteredSummaries = subject
-        .filter(summary => tag ? summary.tags?.includes(tag) : true)
         .filter(summary => {
             const filename = summary.filename?.toLowerCase() || "";
             const author = summary.author?.toLowerCase() || "";
@@ -21,7 +20,7 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
                 author.includes(query) ||
                 type.includes(query) ||
                 rating.includes(query) ||
-                dateRead.includes(query) ||
+                date.includes(query) ||
                 description.includes(query) ||
                 tags.some(t => t.includes(query))
             );
