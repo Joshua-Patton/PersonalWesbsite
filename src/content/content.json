@@ -9,22 +9,9 @@
         "math",
         "simulation"
       ],
-      "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs.md",
-      "filename": "Conway's Game of Life on dynamic Graphs",
-      "lastModified": 1771303618582
-    },
-    {
-      "date": "2025-10-25",
-      "thumbnail": "image-13.webp",
-      "description": null,
-      "tags": [
-        "gametheory",
-        "math",
-        "simulation"
-      ],
-      "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs.md",
-      "filename": "Conway's Game of Life on dynamic Graphs",
-      "lastModified": 1771303618582
+      "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs 1.md",
+      "filename": "Conway's Game of Life on dynamic Graphs 1",
+      "lastModified": 1771424323906
     }
   ],
   "art": [],
@@ -106,7 +93,21 @@
       ],
       "md": "/src/content/blog/writings/Man is not the same for long - thoughts on change and identity.md",
       "filename": "Man is not the same for long - thoughts on change and identity",
-      "lastModified": 1771422340177
+      "lastModified": 1771423176372
+    }
+  ],
+  "courses": [
+    {
+      "date": "2026-02-17",
+      "tags": [
+        "philosophy",
+        "psycology",
+        "life"
+      ],
+      "thumbnail": "image-15.webp",
+      "md": "/src/content/courses/Practical React.md",
+      "filename": "Practical React",
+      "lastModified": 1771428060991
     }
   ]
 }

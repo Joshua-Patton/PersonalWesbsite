@@ -40,6 +40,8 @@ const projectMd = import.meta.glob('../content/projects/**/*.md', {
     import: 'default',
 });
 
+
+
 export function getProjectMd(filepath) {
     if (!filepath) return null;
 
@@ -56,4 +58,31 @@ export function getProjectMd(filepath) {
     }
 
     return projectMd[key]; // ✅ raw markdown string
+}
+
+
+const coursesMd = import.meta.glob('../content/courses/**/*.md', {
+    eager: true,
+    query: '?raw',
+    import: 'default',
+});
+
+
+
+export function getCoursesMd(filepath) {
+    if (!filepath) return null;
+
+    // Normalize path (JSON usually stores full /src/... paths)
+    const normalized = filepath.replace(/^\/?src\//, '');
+
+    const key = Object.keys(coursesMd).find(k =>
+        k.endsWith(normalized.replace('content/', ''))
+    );
+
+    if (!key) {
+        console.warn('Markdown not found:', filepath);
+        return null;
+    }
+
+    return coursesMd[key]; // ✅ raw markdown string
 }

@@ -5,7 +5,7 @@ import About from './pages/About';
 import Test from './pages/Test';
 import { Projects } from './pages/Projects';
 import { Blog, Writings, Reviews } from './pages/Blog';
-import Learning from './pages/Learning'
+import { Learning } from './pages/Learning'
 
 import Course from './components/Course';
 import DisplayCourses from './components/DisplayCourses';
@@ -52,7 +52,7 @@ const routes = [
         element: <Learning />,
         children: [
           { index: true, element: <DisplayCourses /> }, // default child: show all projects
-          { path: "ReactCourse", element: < ReactCourse /> }
+          { path: ":name", element: < MarkdownPage /> }
         ]
       }
     ],

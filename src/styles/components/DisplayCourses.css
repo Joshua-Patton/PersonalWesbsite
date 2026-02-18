@@ -1,0 +1,61 @@
+
+.learning-image-container {
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 80%;
+
+    margin: 0 auto;   /* 🔥 centers it */
+}
+
+
+
+.learning-image-container img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.learning-image-container:hover .hover-text {
+    border-radius: 20px;
+    opacity: 1;
+    transition: opacity 1s ease;
+
+}
+
+.learning-image-container .hover-text {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.608);
+    color: rgb(253, 253, 242);
+    font-family: "inter";
+
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+
+label #project-title{
+    display: absolute;
+    transform: translate(0, clamp(-25px,-23px,-20px));
+    font-family: "Montserrat", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+
+label {
+    display: flex;
+    justify-content: center;
+    font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,8 +1,9 @@
-import content from "../content/content.json";
-const projects = content["projects"]
+
 import { getImage, getProjectMd } from "../utility/import";
 import { Link } from "react-router-dom";
 import { useOutletContext } from "react-router-dom";
+import content from "../content/content.json";
+const projects = content["projects"]
 
 
 export default function ProjectsDisplay() {

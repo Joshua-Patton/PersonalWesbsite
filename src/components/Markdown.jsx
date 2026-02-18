@@ -39,7 +39,6 @@ export function MarkdownPage() {
             rehypePlugins={[rehypeKatex, rehypeSlug]}
             components={{
 
-              // 🔥 Internal heading scroll only
               a({ href, children }) {
 
                 if (href?.startsWith("#")) {
