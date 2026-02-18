@@ -7,12 +7,17 @@ import { Projects } from './pages/Projects';
 import { Blog, Writings, Reviews } from './pages/Blog';
 import Learning from './pages/Learning'
 
+import Course from './components/Course';
+import DisplayCourses from './components/DisplayCourses';
 import DisplayProject from './components/DisplayProject';
 import { Navigate } from 'react-router-dom';
 import { Children } from 'react';
 import { MarkdownPage } from './components/Markdown';
 import { DisplaySummaries } from './components/DisplaySummaries';
 import { Art } from './pages/Art';
+
+import { ReactCourse } from './pages/courses/ReactCourse';
+
 
 const routes = [
   {
@@ -45,6 +50,10 @@ const routes = [
       {
         path: "Learning",
         element: <Learning />,
+        children: [
+          { index: true, element: <DisplayCourses /> }, // default child: show all projects
+          { path: "ReactCourse", element: < ReactCourse /> }
+        ]
       }
     ],
   },

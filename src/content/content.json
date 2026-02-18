@@ -12,6 +12,19 @@
       "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs.md",
       "filename": "Conway's Game of Life on dynamic Graphs",
       "lastModified": 1771303618582
+    },
+    {
+      "date": "2025-10-25",
+      "thumbnail": "image-13.webp",
+      "description": null,
+      "tags": [
+        "gametheory",
+        "math",
+        "simulation"
+      ],
+      "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs.md",
+      "filename": "Conway's Game of Life on dynamic Graphs",
+      "lastModified": 1771303618582
     }
   ],
   "art": [],
@@ -36,7 +49,7 @@
       "description": "Episodic journeys of a self-deluded 'knight' and his gullible side-kick",
       "md": "/src/content/blog/reviews/Don Quixote.md",
       "filename": "Don Quixote",
-      "lastModified": 1771257320907
+      "lastModified": 1771421078886
     },
     {
       "thumbnail": "image-8.webp",
@@ -93,7 +106,7 @@
       ],
       "md": "/src/content/blog/writings/Man is not the same for long - thoughts on change and identity.md",
       "filename": "Man is not the same for long - thoughts on change and identity",
-      "lastModified": 1771302969806
+      "lastModified": 1771422340177
     }
   ]
 }

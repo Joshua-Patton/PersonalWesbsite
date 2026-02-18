@@ -11,3 +11,11 @@ If you ask a person sincerely who they are, they will most likely speak of their
 > How would you answer?
 
 Why does this question which seems to simple and central, evade our grasp - is there a problem with how the question is framed, what might a 'good' answer look like?
+
+
+# table of contents
+
+[[#An addiction to identity - tribes and tribulation]]
+[[#table of contents]]
+
+![[image-14.webp]]

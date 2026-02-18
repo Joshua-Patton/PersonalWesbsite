@@ -1,4 +1,4 @@
-import { Link, Outlet, useOutletContext } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Nav from '../components/Nav';
 import { Filter } from "../components/Filter";
 import '/src/styles/pages/Projects.css';

@@ -1,4 +1,4 @@
-import { Link, Outlet, useOutletContext } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Nav from '../components/Nav'
 import '/src/styles/pages/Blog.css';
 import { useState } from "react";
@@ -7,7 +7,6 @@ import { Filter } from "../components/Filter";
 
 import content from "/src/content/content.json";
 const writings = content["writings"]
-const art = content["art"]
 const reviews = content["reviews"]
 
 import { DisplaySummaries } from "../components/DisplaySummaries";

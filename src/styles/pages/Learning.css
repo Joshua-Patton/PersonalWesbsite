@@ -1,0 +1,77 @@
+/* Page section */
+.courses {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: .5em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Individual course card */
+.course-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.course-card:hover {
+
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    color: #000;
+}
+
+/* Optional page background */
+.learning-page {
+    background: #f7f7f7;
+    min-height: 100vh;
+}
+
+.learning .info-text {
+    padding: 10rem 10rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-family: "inter";
+    color: rgb(0, 0, 0);
+
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.learning h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgba(21, 21, 21, 0.769);
+    text-align: center;
+
+
+}
+
+.learning ol{
+    font-size: .9em;
+}
+ 
+.info-text a {
+    color: rgb(67, 67, 248); 
+    text-decoration: underline;
+}

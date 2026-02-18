@@ -47,11 +47,12 @@ body, html {
 
 .page {
     border-radius: 20px;
-    background-color: rgba(238, 238, 238, 0.773);
+    background-color: rgba(238, 238, 238, 0.932);
     margin: 5%;
     margin-top: 1%;
-    padding: 3%;
+    padding: 6%;
     padding-bottom: 20%;
+    padding-top: 5%;
     color: black;
     font-family: "inter";
 }

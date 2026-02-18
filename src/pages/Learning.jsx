@@ -1,11 +1,14 @@
+import { Outlet } from "react-router-dom";
+import DisplayCourse from "../components/DisplayCourses";
+export default function Learning() {
 
-
-const Learning = () => {
   return (
     <div className="page">
-      in works - coming soon
+      <div className="learning">
+        <Outlet />
+      </div>
+
     </div>
   );
 };
 
-export default Learning;
