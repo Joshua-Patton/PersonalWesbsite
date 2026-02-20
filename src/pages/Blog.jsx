@@ -13,13 +13,13 @@ import { DisplaySummaries } from "../components/DisplaySummaries";
 import { DisplayArticle } from "../components/DisplayArticle";
 
 export function Writings() {
-
   const [searchQuery, setSearchQuery] = useState("");
+  const [sort, setSort] = useState("");
   return <>
-    <Filter query={searchQuery} onQueryChange={setSearchQuery} />
+    <Filter query={searchQuery} onQueryChange={setSearchQuery} sort={sort} onSortChange={setSort} />
     <div className="writings">
       <div className="page">
-        <DisplayArticle subject={writings} searchQuery={searchQuery} />
+        <DisplayArticle subject={writings} searchQuery={searchQuery} sortValue={sort} />
       </div>
     </div>
   </>
@@ -27,11 +27,12 @@ export function Writings() {
 
 export function Reviews() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [sort, setSort] = useState("");
   return <>
-    <Filter query={searchQuery} onQueryChange={setSearchQuery} />
+    <Filter query={searchQuery} onQueryChange={setSearchQuery} sort={sort} onSortChange={setSort} />
     <div className="reviews">
       <div className="page">
-        <DisplaySummaries subject={reviews} searchQuery={searchQuery} />
+        <DisplaySummaries subject={reviews} searchQuery={searchQuery} sortValue={sort} />
       </div>
     </div>
   </>

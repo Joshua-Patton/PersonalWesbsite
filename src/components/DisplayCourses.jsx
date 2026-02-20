@@ -8,7 +8,15 @@ const courses = content["courses"]
 
 export default function DisplayCourses() {
     const { searchQuery = "" } = useOutletContext();
+    const { sort = "" } = useOutletContext();
     const query = searchQuery.toLowerCase();
+
+    const sortFunctions = {
+        newest: (a, b) => new Date(b.date) - new Date(a.date),
+        oldest: (a, b) => new Date(a.date) - new Date(b.date),
+        title: (a, b) => a.filename.localeCompare(b.filename),
+    };
+
     return (
         <div className="page">
             <div className="coursesdisplay">
@@ -25,6 +33,7 @@ export default function DisplayCourses() {
                             tags.some(t => t.includes(query))
                         );
                     })
+                    .sort(sortFunctions[sort] || (() => 0))
                     .map((project, index) => {
                         return (
 

@@ -7,11 +7,12 @@ import { useState } from "react";
 
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [sort, setSort] = useState("");
 
   return (
     <div>
-      <Filter query={searchQuery} onQueryChange={setSearchQuery} />
-      <Outlet context={{ searchQuery }} />
+      <Filter query={searchQuery} onQueryChange={setSearchQuery} sort={sort} onSortChange={setSort} />
+      <Outlet context={{ searchQuery, sort }} />
     </div>
   );
 };

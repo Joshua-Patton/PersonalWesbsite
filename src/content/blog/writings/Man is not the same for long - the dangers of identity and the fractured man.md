@@ -2,14 +2,13 @@
 date: 2026-02-17
 tags:
   - philosophy
-  - psycology
   - life
 ---
 
 If I asked you "who your are?" you would probably respond with your occupation. You would say I am a painter, I am a accountant, I am a guitarist. But it is obvious that this not who you are. Perhaps instead you say "I am Christian" or " i am Muslim, maybe you respond with your name, "I am John" or "I am James" but this also misses the mark, your name is a label, a notation, at best an arrow pointing towards the real you.
 Before reading further, how would you answer? *who are you?* 
 
-The reason this question is so apparently difficult to answer honestly is because we are firstly not unified conversely we are many competing  and often contradicting desires, hopes and fears being acted out by a single body. Secondly we are ultimately always changing, adapting to our surroundings and a world which itself never sits still. 
+The reason this question is so apparently difficult to answer honestly is because we are firstly not unified conversely we are many competing and often contradicting desires, hopes and fears being acted out by a single body. Secondly we are ultimately always changing, adapting to our surroundings and a world which itself never sits still, our 
 
 We answer with our occupation, religion or social group because we identify with it, either they represent certain ambitions and virtues which we wish to hold - this is identifying with the future: which is a projection of ourselves and not itself us. Or they represent our past in some way, something we have done or experienced - this is identifying with our past selves: which is also not us, but instead a shadow of us.
 

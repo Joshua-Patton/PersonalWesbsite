@@ -1,8 +1,15 @@
 import { getBlogMd } from "../utility/import";
 import { Link } from "react-router-dom";
 
-export function DisplayArticle({ subject, searchQuery }) {
+export function DisplayArticle({ subject, searchQuery, sortValue }) {
     const query = searchQuery.toLowerCase();
+    const sort = sortValue.toLowerCase();
+    const sortFunctions = {
+        newest: (a, b) => new Date(b.date) - new Date(a.date),
+        oldest: (a, b) => new Date(a.date) - new Date(b.date),
+        title: (a, b) => a.filename.localeCompare(b.filename),
+    };
+
 
     return (
         <div className="articles">
@@ -19,6 +26,7 @@ export function DisplayArticle({ subject, searchQuery }) {
                         tags.some(t => t.includes(query))
                     );
                 })
+                .sort(sortFunctions[sort] || (() => 0))
                 .map((article, index) => (
                     <Link
                         key={index}

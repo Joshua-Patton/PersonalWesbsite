@@ -2,9 +2,11 @@ import "/src/styles/components/SummaryLink.css";
 import { Link } from "react-router-dom";
 import { getBlogMd, getImage } from "../utility/import";
 
-export function DisplaySummaries({ subject, searchQuery, tag }) {
+export function DisplaySummaries({ subject, searchQuery, sortValue }) {
     const query = searchQuery.toLowerCase();
+    const sort = sortValue.toLowerCase();
 
+    
     const filteredSummaries = subject
         .filter(summary => {
             const filename = summary.filename?.toLowerCase() || "";
@@ -24,11 +26,32 @@ export function DisplaySummaries({ subject, searchQuery, tag }) {
                 description.includes(query) ||
                 tags.some(t => t.includes(query))
             );
-        });
+        }
+        );
+    //apply sort
+    const sortedSummaries = filteredSummaries.sort((a, b) => {
+        switch (sort) {
+            case "newest":
+                return new Date(b.date) - new Date(a.date);
+
+            case "oldest":
+                return new Date(a.date) - new Date(b.date);
+
+            case "title":
+                return a.filename.localeCompare(b.filename);
+
+            case "author":
+                return a.author.localeCompare(b.author);
+
+            default:
+                return 0;
+        }
+    });
+
 
     return (
         <div className="summaries">
-            {filteredSummaries.map((summary, index) => (
+            {sortedSummaries.map((summary, index) => (
                 <div className="summary" key={index + summary.author + summary.title}>
                     <Link
                         to={summary.filename?.replaceAll(" ", "_")}

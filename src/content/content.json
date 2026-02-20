@@ -88,12 +88,21 @@
       "date": "2026-02-17",
       "tags": [
         "philosophy",
-        "psycology",
         "life"
       ],
-      "md": "/src/content/blog/writings/Man is not the same for long, and the dangers of identity.md",
-      "filename": "Man is not the same for long, and the dangers of identity",
-      "lastModified": 1771430440633
+      "md": "/src/content/blog/writings/Man is not the same for long - the dangers of identity and the fractured man.md",
+      "filename": "Man is not the same for long - the dangers of identity and the fractured man",
+      "lastModified": 1771545552073
+    },
+    {
+      "date": "2026-02-20",
+      "tags": [
+        "writings"
+      ],
+      "description": null,
+      "md": "/src/content/blog/writings/The necessity of an aim for meaning.md",
+      "filename": "The necessity of an aim for meaning",
+      "lastModified": 1771545549530
     }
   ],
   "courses": [
