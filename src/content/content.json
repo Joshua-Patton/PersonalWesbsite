@@ -20,67 +20,78 @@
       "thumbnail": "image-4.webp",
       "type": "book",
       "author": "Nikos Kazantzakis",
-      "rating": "9/10",
-      "date": "2026-10-10",
+      "genre": "non-fiction",
+      "date": "2025-10-10",
       "description": "Fictionalised biography of Francis of Assisi.",
       "md": "/src/content/blog/reviews/God's Pauper.md",
       "filename": "God's Pauper",
-      "lastModified": 1771292533777
+      "lastModified": 1771570612118
     },
     {
       "thumbnail": "image-7.webp",
       "type": "book",
       "author": "Miguel de Cervantes",
-      "rating": "9/10",
-      "date": null,
+      "genre": "9/10",
+      "date": "2022-11-17",
       "description": "Episodic journeys of a self-deluded 'knight' and his gullible side-kick",
       "md": "/src/content/blog/reviews/Don Quixote.md",
       "filename": "Don Quixote",
-      "lastModified": 1771421078886
+      "lastModified": 1771569032679
     },
     {
       "thumbnail": "image-8.webp",
       "type": null,
       "author": "Edward O. Wilson",
-      "rating": null,
-      "date": null,
+      "genre": null,
+      "date": "2024-04-02",
       "description": null,
       "md": "/src/content/blog/reviews/Consilience.md",
       "filename": "Consilience",
-      "lastModified": 1771257435371
+      "lastModified": 1771569027702
     },
     {
       "thumbnail": "image-10.webp",
       "type": "book",
       "author": "G.I Gurdjieff",
-      "rating": null,
-      "date": null,
+      "genre": "9/10",
+      "date": "2024-04-24",
       "description": null,
       "md": "/src/content/blog/reviews/Meetings with Remarkable Men.md",
       "filename": "Meetings with Remarkable Men",
-      "lastModified": 1771258130205
+      "lastModified": 1771569066719
     },
     {
       "thumbnail": "image-11.webp",
       "type": null,
       "author": "Don Miguel Ruiz",
-      "rating": null,
-      "date": null,
+      "genre": null,
+      "date": "2025-10-20",
       "description": null,
       "md": "/src/content/blog/reviews/The four Agreements.md",
       "filename": "The four Agreements",
-      "lastModified": 1771257625164
+      "lastModified": 1771570931380
     },
     {
       "thumbnail": "image-12.webp",
-      "type": null,
+      "type": "book",
       "author": "Earl Nightingale",
       "Genre": "Self-help/philosophy",
-      "date": null,
+      "date": "2023-10-10",
       "description": null,
       "md": "/src/content/blog/reviews/The Strangest Secret.md",
       "filename": "The Strangest Secret",
-      "lastModified": 1771301923652
+      "lastModified": 1771569104979
+    },
+    {
+      "thumbnail": "image-19.webp",
+      "type": "book",
+      "author": "Paul Kalanithi",
+      "genre": null,
+      "date": "2023-08-30",
+      "description": null,
+      "md": "/src/content/blog/reviews/When Breath Becomes Air.md",
+      "filename": "When Breath Becomes Air",
+      "lastModified": 1771571147791
     }
   ],
   "writings": [
@@ -113,10 +124,10 @@
         "psycology",
         "life"
       ],
-      "thumbnail": "image-15.webp",
+      "thumbnail": "image-18.webp",
       "md": "/src/content/courses/Practical React.md",
       "filename": "Practical React",
-      "lastModified": 1771428060991
+      "lastModified": 1771570507266
     }
   ]
 }

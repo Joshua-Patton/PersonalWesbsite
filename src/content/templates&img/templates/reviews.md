@@ -2,7 +2,7 @@
 thumbnail:
 type:
 author:
-rating:
+genre:
 date:
 description:
 ---

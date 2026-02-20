@@ -69,8 +69,8 @@ export function DisplaySummaries({ subject, searchQuery, sortValue }) {
                                 </div>
 
                                 <div className="info-row">
-                                    <span className="label">Rating</span>
-                                    <span className="value">{summary.rating}</span>
+                                    <span className="label">Genre</span>
+                                    <span className="value">{summary.genre}</span>
                                 </div>
 
                                 <div className="info-row">

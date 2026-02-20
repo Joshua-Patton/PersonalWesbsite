@@ -4,7 +4,7 @@ tags:
   - philosophy
   - psycology
   - life
-thumbnail: "[[image-15.webp]]"
+thumbnail: "[[image-18.webp]]"
 ---
 **NOTICE: UNDER CONSTRUCTION, NOT FINISHED**
 
@@ -26,7 +26,8 @@ Ai is not demonised in this course, but rather along with other tools, you will 
 # structured web development work-flows
 
 # Databases
-# what next?
+# what next
+
 
 
 
