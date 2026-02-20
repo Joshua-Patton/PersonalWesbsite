@@ -32,7 +32,7 @@ export default function ProjectsDisplay() {
               tags.some(t => t.includes(query))
             );
           })
-          .sort(sortFunctions[sort] || (() => 0))
+          .sort(sortFunctions[sort] || sortFunctions["newest"])
           .map((project, index) => {
             return (
 

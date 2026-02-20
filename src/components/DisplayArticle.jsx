@@ -26,7 +26,7 @@ export function DisplayArticle({ subject, searchQuery, sortValue }) {
                         tags.some(t => t.includes(query))
                     );
                 })
-                .sort(sortFunctions[sort] || (() => 0))
+                .sort(sortFunctions[sort] || sortFunctions["newest"])
                 .map((article, index) => (
                     <Link
                         key={index}

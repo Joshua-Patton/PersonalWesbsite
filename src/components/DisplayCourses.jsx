@@ -33,7 +33,7 @@ export default function DisplayCourses() {
                             tags.some(t => t.includes(query))
                         );
                     })
-                    .sort(sortFunctions[sort] || (() => 0))
+                    .sort(sortFunctions[sort] || sortFunctions["newest"])
                     .map((project, index) => {
                         return (
 

@@ -6,7 +6,7 @@ export function DisplaySummaries({ subject, searchQuery, sortValue }) {
     const query = searchQuery.toLowerCase();
     const sort = sortValue.toLowerCase();
 
-    
+
     const filteredSummaries = subject
         .filter(summary => {
             const filename = summary.filename?.toLowerCase() || "";
@@ -29,25 +29,12 @@ export function DisplaySummaries({ subject, searchQuery, sortValue }) {
         }
         );
     //apply sort
-    const sortedSummaries = filteredSummaries.sort((a, b) => {
-        switch (sort) {
-            case "newest":
-                return new Date(b.date) - new Date(a.date);
-
-            case "oldest":
-                return new Date(a.date) - new Date(b.date);
-
-            case "title":
-                return a.filename.localeCompare(b.filename);
-
-            case "author":
-                return a.author.localeCompare(b.author);
-
-            default:
-                return 0;
-        }
-    });
-
+    const sortFunctions = {
+        newest: (a, b) => new Date(b.date) - new Date(a.date),
+        oldest: (a, b) => new Date(a.date) - new Date(b.date),
+        title: (a, b) => a.filename.localeCompare(b.filename),
+    };
+    const sortedSummaries = filteredSummaries.sort(sortFunctions[sort] || sortFunctions["newest"])
 
     return (
         <div className="summaries">
