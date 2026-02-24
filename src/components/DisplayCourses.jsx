@@ -19,7 +19,7 @@ export default function DisplayCourses() {
 
     return (
         <div className="page">
-            <div className="coursesdisplay">
+            <div className="courses">
 
                 {courses
                     .filter(project => {

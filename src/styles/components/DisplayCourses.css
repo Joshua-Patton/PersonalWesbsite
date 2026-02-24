@@ -59,3 +59,7 @@ label {
     justify-content: center;
     font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.learning-image-container {
+    margin-top: 1em
+}

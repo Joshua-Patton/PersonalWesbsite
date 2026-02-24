@@ -11,7 +11,7 @@
       ],
       "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs 1.md",
       "filename": "Conway's Game of Life on dynamic Graphs 1",
-      "lastModified": 1771424323906
+      "lastModified": 1771917522822
     }
   ],
   "art": [],
@@ -103,7 +103,7 @@
       ],
       "md": "/src/content/blog/writings/Man is not the same for long - the dangers of identity and the fractured man.md",
       "filename": "Man is not the same for long - the dangers of identity and the fractured man",
-      "lastModified": 1771545552073
+      "lastModified": 1771917725767
     },
     {
       "date": "2026-02-20",
@@ -128,6 +128,14 @@
       "md": "/src/content/courses/Practical React.md",
       "filename": "Practical React",
       "lastModified": 1771570507266
+    },
+    {
+      "date": null,
+      "tags": null,
+      "thumbnail": "image-20.webp",
+      "md": "/src/content/courses/Galois theory.md",
+      "filename": "Galois theory",
+      "lastModified": 1771571698285
     }
   ]
 }

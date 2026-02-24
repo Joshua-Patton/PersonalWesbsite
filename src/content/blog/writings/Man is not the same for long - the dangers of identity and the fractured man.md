@@ -5,8 +5,7 @@ tags:
   - life
 ---
 
-If I asked you "who your are?" you would probably respond with your occupation. You would say I am a painter, I am a accountant, I am a guitarist. But it is obvious that this not who you are. Perhaps instead you say "I am Christian" or " i am Muslim, maybe you respond with your name, "I am John" or "I am James" but this also misses the mark, your name is a label, a notation, at best an arrow pointing towards the real you.
-Before reading further, how would you answer? *who are you?* 
+If I asked you "who your are?" you would probably respond with your occupation. You would say I am a painter, I am a accountant, I am a builder. But this is not who you are. Perhaps instead you reference a grouping that you belong to, you say "I am Christian" or " i am Muslim, maybe you respond with your name, "I am John" or "I am James" but this also misses the mark, your name is a label, a notation, at best an arrow pointing towards the real you.
 
 The reason this question is so apparently difficult to answer honestly is because we are firstly not unified conversely we are many competing and often contradicting desires, hopes and fears being acted out by a single body. Secondly we are ultimately always changing, adapting to our surroundings and a world which itself never sits still, our 
 
