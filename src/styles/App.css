@@ -16,15 +16,20 @@ body, html {
 
 .main {
     background-image: url('/src/assets/backgrounds/lizard.jpg');
-    animation: backgroundMove 100s infinite alternate;
+    animation: backgroundMove 70s infinite alternate;
     min-height: 100vh;
     height: auto;
     overflow: hidden;
+    background-attachment: fixed;   
     
 }
 @keyframes backgroundMove {
-    from {background-position-y: 0%;}
-    to {background-position-y: 100%;}   
+    from {
+        background-position-y: 0%;
+    }
+    to {
+        background-position-y: 100%;
+    }   
 }
 
 .content{
