@@ -42,7 +42,7 @@
     height: auto;
     display: block;
     margin: 0 auto;  
-    overflow: visible;   /* centers image in its flex column */
+    overflow: visible;
 }
 
 /* Mobile: stack column, image first */

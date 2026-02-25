@@ -84,13 +84,11 @@ const About = () => {
       <h2>Work Experience</h2>
 
       <strong>UX Machines</strong> – Mar 2024 to Sep 2024
-      < p >
-        <p>
-          I interned for 26 weeks (6 months) at <a href="https://uxmachines.com/" target="_blank" rel="noopener noreferrer">UX Machines</a>,
-          a software and aerial drone company. I worked on swarm algorithms, geodesic simulations, and flight plan optimization, though I cannot provide further technical details due to an NDA.
-        </p>
+      <p>
+        I interned for 26 weeks (6 months) at <a href="https://uxmachines.com/" target="_blank" rel="noopener noreferrer">UX Machines</a>,
+        a software and aerial drone company. I worked on swarm algorithms, geodesic simulations, and flight plan optimization, though I cannot provide further technical details due to an NDA.
+      </p>
 
-      </p >
 
       <br />
       <h1>contact</h1>
