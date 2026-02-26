@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem; /* spacing between articles */
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -43,7 +43,7 @@
 
 /* Title / name */
 .article .name {
-    font-size: 1.25rem;
+    font-size: clamp(.6rem, 1.8vw, 1.5rem);
     font-weight: 600;
     color: #222;
 }

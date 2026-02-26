@@ -207,4 +207,15 @@ p.title-sub {
     .title-container {
         padding-bottom: 10em; /* optional for spacing below */
     }
+
+    
+.quote::before {
+    top: -5px;
+    left: 0px;
+}
+
+.quote::after {
+    bottom: -10px;
+    right: 10px;
+}
 }
