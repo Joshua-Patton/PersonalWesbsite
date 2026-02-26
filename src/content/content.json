@@ -96,16 +96,6 @@
   ],
   "writings": [
     {
-      "date": "2026-02-17",
-      "tags": [
-        "philosophy",
-        "life"
-      ],
-      "md": "/src/content/blog/writings/Man is not the same for long - the dangers of identity and the fractured man.md",
-      "filename": "Man is not the same for long - the dangers of identity and the fractured man",
-      "lastModified": 1771919208122
-    },
-    {
       "date": "2026-02-20",
       "tags": [
         "writings"
@@ -114,6 +104,16 @@
       "md": "/src/content/blog/writings/The necessity of an aim for meaning.md",
       "filename": "The necessity of an aim for meaning",
       "lastModified": 1771545549530
+    },
+    {
+      "date": "2026-02-17",
+      "tags": [
+        "philosophy",
+        "life"
+      ],
+      "md": "/src/content/blog/writings/Man is self referential, a multiplicity and not the same for long.md",
+      "filename": "Man is self referential, a multiplicity and not the same for long",
+      "lastModified": 1772003012928
     }
   ],
   "courses": [
