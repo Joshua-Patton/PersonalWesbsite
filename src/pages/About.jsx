@@ -94,7 +94,7 @@ const About = () => {
       <h1>contact</h1>
       <br />
       <div class="about">
-        <form name="contact" method="POST" data-netifly="true">
+        <form name="contact" method="POST" >
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name" /></label>
