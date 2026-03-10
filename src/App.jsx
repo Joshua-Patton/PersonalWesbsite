@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import { getImage } from "./utility/import";
 import "./styles/App.css";
 import "./styles/fonts.css";
 
@@ -8,11 +8,16 @@ import Title from "./components/Title";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
+import daybk from "/src/assets/backgrounds/mehikesunset.jpg"
+import daycompbk from "/src/assets/backgrounds/mehikesunset-compressed.jpg"
+import nightbk from "/src/assets/backgrounds/nightsky.jpg"
+import nightcompbk from "/src/assets/backgrounds/nightsky-compressed.jpg"
+
 function useBackground(src) {
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         const img = new Image();
-        img.src = src;
+        img.src = getImage(src);
         img.onload = () => setLoaded(true);
     }, [src]);
 
@@ -29,8 +34,10 @@ const App = () => {
     function handlethemebuttonclick() {
         setTheme(prev => prev == "day" ? "night" : "day")
     }
-    const dayloaded = useBackground("/src/assets/backgrounds/mehikesunset.jpg");
-    const nightloaded = useBackground("/src/assets/backgrounds/nightsky.jpg");
+
+
+    const dayloaded = useBackground(daybk);
+    const nightloaded = useBackground(nightbk);
 
 
     return (
@@ -39,8 +46,8 @@ const App = () => {
                 theme={theme}
                 style={{
                     backgroundImage: theme == "day" ?
-                        dayloaded ? "url('/src/assets/backgrounds/mehikesunset.jpg')" : "url('/src/assets/backgrounds/mehikesunset-compressed.jpg')"
-                        : nightloaded ? "url('/src/assets/backgrounds/nightsky.jpg')" : "url('/src/assets/backgrounds/nightsky-compressed.jpg')"
+                        dayloaded ? `url(${daybk})` : `url(${daycompbk})`
+                        : nightloaded ? `url(${nightbk})` : `url(${nightcompbk})`
                 }}
             >
                 <div className="main">
