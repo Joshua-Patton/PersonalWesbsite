@@ -29,6 +29,9 @@ p.title{
     overflow: hidden;
     width: 100%;
     font-size: clamp(1rem, 7vw, 3rem);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7),
+               -2px -2px 8px rgba(255,255,255,0.2);
+    -webkit-text-stroke: 2px black; /* Chrome/Safari */
 
 }
 
@@ -123,6 +126,7 @@ p.title-sub {
 }
 
 .quote {
+    mix-blend-mode: difference;
     margin-top: 1rem;
     padding: 1rem 1.25rem;
     font-family: "Georgia", serif;

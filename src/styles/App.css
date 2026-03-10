@@ -14,14 +14,37 @@ body, html {
     background-color: black;
 }
 
-.main {
-    background-image: url('/src/assets/backgrounds/nightsky.jpg');
+.App {
     animation: backgroundMove 70s infinite alternate;
     min-height: 100vh;
     height: auto;
     overflow: hidden;
     background-attachment: fixed;   
+        background-size: 100% 300%; /* double height */
+    background-position: top; 
     
+    
+}
+
+.App[theme="day"]{
+    background-image: url('/src/assets/pictures/mehikesunset.jpg');
+}
+.App[theme="night"]{
+    background-image: url('/src/assets/backgrounds/nightsky.jpg');
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.App[theme="night"] .page {     
+    transition: background-color 0.5s ease, color 0.5s ease;              
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.App[theme="night"] form {              
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.App[theme="day"] .page {     
+    transition: background-color 0.5s ease, color 0.5s ease;              
 }
 @keyframes backgroundMove {
     from {
@@ -51,6 +74,8 @@ body, html {
 
 
 .page {
+    padding: 2rem;
+    border-radius: 8px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255);
     background-position: 30px;
@@ -61,4 +86,41 @@ body, html {
     padding-top: 5%;
     color: black;
     font-family: "inter";
+}
+
+
+#themeButton {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  font-family: monospace;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#themeButton {
+  position: fixed;        /* always visible somewhere */
+  background: transparent;
+  border: none !important;
+  font-size: 1.2rem;     /* small, subtle */
+  cursor: pointer;
+  opacity: 0.4;           /* mostly hidden */
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+
+#themeButton:hover {
+  opacity: 1;             /* fully visible on hover */
+  transform: scale(1.2);  /* subtle pop effect */
+}
+
+/* Optional: theme-specific color tweaks */
+#themeButton[theme="day"] {
+  color: #ffd700;         /* subtle sun color */
+}
+
+#themeButton[theme="night"] {
+  color: #ddd;            /* subtle moon color */
 }

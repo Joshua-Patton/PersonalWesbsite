@@ -27,7 +27,6 @@ const Title = () => {
         //get quote
 
     }, []);
-    console.log(quote.text.length)
     return (
         <>
             <div className="title-container" style={{

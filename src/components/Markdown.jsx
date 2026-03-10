@@ -69,6 +69,7 @@ export function MarkdownPage() {
               img({ src, alt }) {
                 return (
                   <img
+                    className="mkimg"
                     src={getImage(src)}
                     alt={alt}
                     loading="lazy"
