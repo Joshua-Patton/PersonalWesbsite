@@ -9,12 +9,22 @@
         "math",
         "simulation"
       ],
+      "status": "under-construction",
       "md": "/src/content/projects/Conway's Game of Life on dynamic Graphs 1.md",
       "filename": "Conway's Game of Life on dynamic Graphs 1",
-      "lastModified": 1771917522822
+      "lastModified": 1772303499383
+    },
+    {
+      "date": "2026-03-01",
+      "thumbnail": null,
+      "description": null,
+      "tags": null,
+      "status": "under-construction",
+      "md": "/src/content/projects/Weird Checkers.md",
+      "filename": "Weird Checkers",
+      "lastModified": 1772304451171
     }
   ],
-  "art": [],
   "reviews": [
     {
       "thumbnail": "image-4.webp",
@@ -73,14 +83,14 @@
     },
     {
       "thumbnail": "image-12.webp",
-      "type": "book",
+      "type": "essay",
       "author": "Earl Nightingale",
       "Genre": "Self-help/philosophy",
-      "date": "2023-10-10",
-      "description": null,
+      "date": "2026-03-08",
+      "description": "A transcript of the talk by the same name, the books main tenet being \"We become what we think about\"",
       "md": "/src/content/blog/reviews/The Strangest Secret.md",
       "filename": "The Strangest Secret",
-      "lastModified": 1771569104979
+      "lastModified": 1773069425918
     },
     {
       "thumbnail": "image-19.webp",
@@ -96,24 +106,47 @@
   ],
   "writings": [
     {
-      "date": "2026-02-20",
-      "tags": [
-        "writings"
-      ],
-      "description": null,
-      "md": "/src/content/blog/writings/The necessity of an aim for meaning.md",
-      "filename": "The necessity of an aim for meaning",
-      "lastModified": 1771545549530
-    },
-    {
       "date": "2026-02-17",
       "tags": [
         "philosophy",
         "life"
       ],
-      "md": "/src/content/blog/writings/Man is a moving fractured identity.md",
-      "filename": "Man is a moving fractured identity",
-      "lastModified": 1772003012928
+      "md": "/src/content/blog/writings/Man is not the same for long.md",
+      "filename": "Man is not the same for long",
+      "lastModified": 1772140969461
+    },
+    {
+      "date": null,
+      "tags": [
+        "writings"
+      ],
+      "description": null,
+      "status": "finished",
+      "md": "/src/content/blog/writings/only when man is silent is he free.md",
+      "filename": "only when man is silent is he free",
+      "lastModified": 1772388989804
+    },
+    {
+      "date": null,
+      "tags": [
+        "writings"
+      ],
+      "description": null,
+      "status": "under-construction",
+      "md": "/src/content/blog/writings/What is understanding.md",
+      "filename": "What is understanding",
+      "lastModified": 1772964523172
+    },
+    {
+      "date": null,
+      "tags": [
+        "writings"
+      ],
+      "description": null,
+      "status": "under-construction",
+      "md": "/src/content/blog/writings/Living simply - a guide to pruning distractions.md",
+      "filename": "Living simply - a guide to pruning distractions",
+      "lastModified": 1772990134333
     }
   ],
   "courses": [

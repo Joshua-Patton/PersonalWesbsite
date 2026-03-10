@@ -21,16 +21,16 @@
     justify-content: left;
     align-content: center;
 }
-p.title, p.title-sub{
+p.title{
     color: white;
-    mix-blend-mode:exclusion;
     font-family: monospace;
-    letter-spacing: 4px;
+    letter-spacing: 2vw;
     border-right: 1px solid white;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
     font-size: clamp(1rem, 7vw, 3rem);
+
 }
 
 
@@ -59,7 +59,7 @@ p#name {
 
 @keyframes titleFinish {
     to {
-        font-size: clamp(1rem, 7vw, 3rem); /* responsive font size */
+        font-size: clamp(1rem, 7vw, 4rem); /* responsive font size */
 
     }
 }

@@ -26,11 +26,13 @@ export default function DisplayCourses() {
                         const title = project.filename?.toLowerCase() || "";
                         const date = project.date?.toLowerCase() || "";
                         const tags = project.tags?.map(t => t.toLowerCase()) || [];
+                        const status = project.status?.toLowerCase() || "";
 
                         return (
-                            title.includes(query) ||
-                            date.includes(query) ||
-                            tags.some(t => t.includes(query))
+                            (title.includes(query) ||
+                                date.includes(query) ||
+                                tags.some(t => t.includes(query))) &&
+                            status.includes("finished")
                         );
                     })
                     .sort(sortFunctions[sort] || sortFunctions["newest"])

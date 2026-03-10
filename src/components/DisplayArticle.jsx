@@ -10,7 +10,6 @@ export function DisplayArticle({ subject, searchQuery, sortValue }) {
         title: (a, b) => a.filename.localeCompare(b.filename),
     };
 
-
     return (
         <div className="articles">
             {subject
@@ -19,11 +18,13 @@ export function DisplayArticle({ subject, searchQuery, sortValue }) {
                     const title = article.filename?.toLowerCase() || "";
                     const date = article.date?.toLowerCase() || "";
                     const tags = article.tags?.map(t => t.toLowerCase()) || [];
+                    const status = article.status?.toLowerCase() || "";
 
                     return (
-                        title.includes(query) ||
+                        (title.includes(query) ||
                         date.includes(query) ||
-                        tags.some(t => t.includes(query))
+                        tags.some(t => t.includes(query))) &&
+                        status.includes("finished")
                     );
                 })
                 .sort(sortFunctions[sort] || sortFunctions["newest"])

@@ -40,7 +40,7 @@ const Title = () => {
                 </div>
                 <div className="box">
                     <p className="title" id="name"
-                        style={{ animation: animation ? "typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 7s forwards" : "typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 0s forwards" }}>
+                        style={{ animation: animation ? "typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 7s forwards" : "typing 3s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 0s forwards" }}>
                         <Link to="/" onClick={handleClick}>Joshua Patton</Link></p>
                     <div className="quote">
                         <div className="quote-text">{quote.text}</div>

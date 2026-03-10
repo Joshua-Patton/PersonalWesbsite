@@ -12,16 +12,17 @@ export function DisplaySummaries({ subject, searchQuery, sortValue }) {
             const filename = summary.filename?.toLowerCase() || "";
             const author = summary.author?.toLowerCase() || "";
             const type = summary.type?.toLowerCase() || "";
-            const rating = summary.rating?.toLowerCase() || "";
+            const genre = summary.genre?.toLowerCase() || "";
             const date = summary.date?.toLowerCase() || "";
             const description = summary.description?.toLowerCase() || "";
             const tags = summary.tags?.map(t => t.toLowerCase()) || [];
+
 
             return (
                 filename.includes(query) ||
                 author.includes(query) ||
                 type.includes(query) ||
-                rating.includes(query) ||
+                genre.includes(query) ||
                 date.includes(query) ||
                 description.includes(query) ||
                 tags.some(t => t.includes(query))
