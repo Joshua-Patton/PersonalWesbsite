@@ -69,3 +69,65 @@ text-align: center;
   color: #555;
 }
 
+
+
+
+
+/* FORM */
+.about form {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: white;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+.about form p {
+  margin-bottom: 22px;
+}
+
+.about label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+.about input,
+.about select,
+.about textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #535252;
+  border-radius: 4px;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.about textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.about input:focus,
+.about select:focus,
+.about textarea:focus {
+  outline: none;
+  border-color: #888;
+  background: #fff;
+}
+
+.about button {
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.about button:hover {
+  background: #444;
+}
