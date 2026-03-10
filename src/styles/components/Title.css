@@ -4,7 +4,6 @@
     display: flex;
     height: 100vh;
     animation: heightDecrease 3s 8s forwards;
-    margin-bottom: 5em;
 }   
 @keyframes heightDecrease {
     to {
@@ -173,8 +172,6 @@ p.title-sub {
     .title-container {
         flex-direction: column;
         align-items: center;
-        height: auto;
-        margin-bottom: 2rem;
         position: relative; /* make sure #right absolute is relative to this */
     }
 
@@ -204,18 +201,15 @@ p.title-sub {
         height: 28px;
     }
 
-    .title-container {
-        padding-bottom: 10em; /* optional for spacing below */
-    }
 
     
-.quote::before {
-    top: -5px;
-    left: 0px;
-}
+    .quote::before {
+        top: -5px;
+        left: 0px;
+    }
 
-.quote::after {
-    bottom: -10px;
-    right: 10px;
-}
+    .quote::after {
+        bottom: -10px;
+        right: 10px;
+    }
 }

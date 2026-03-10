@@ -27,10 +27,12 @@ const Title = () => {
         //get quote
 
     }, []);
-
+    console.log(quote.text.length)
     return (
         <>
-            <div className="title-container">
+            <div className="title-container" style={{
+                marginBottom: `${(quote.text.length / 40) + 3}lh` // this count roughly how many lineheights the quote
+            }}>
                 <div id="left">
 
                     <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/7CQE4KRxkFweZMqNOYuW2J?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -42,7 +44,7 @@ const Title = () => {
                     <p className="title" id="name"
                         style={{ animation: animation ? "typing 1s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 7s forwards" : "typing 3s  steps(13) forwards,cursor 0.4s  step-end infinite alternate,cursorfinish .1s 2s forwards,titleFinish 3s 0s forwards" }}>
                         <Link to="/" onClick={handleClick}>Joshua Patton</Link></p>
-                    <div className="quote">
+                    <div className="quote" style={{ marginBottom: "0em" }} >
                         <div className="quote-text">{quote.text}</div>
                         <div className="quote-author">{quote.author}</div>
                     </div>

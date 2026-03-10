@@ -13,7 +13,7 @@ export function Art() {
                 <p id="art-text">
                     I think when we look back at our own art, we get reminded of who we are
                 </p>
-                <h1>poetry</h1>
+                <h1><em>poetry</em></h1>
                 {poems.map((poem) => {
                     return (
                         <Poem date={poem.date} title={poem.title}>
