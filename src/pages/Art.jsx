@@ -1,6 +1,5 @@
-
-import '../styles/pages/Art.css'
-
+import Poem from '../components/Poem'
+import poems from "../assets/poems.json";
 import '../styles/pages/Art.css'
 
 export function Art() {
@@ -15,20 +14,15 @@ export function Art() {
                     I think when we look back at our own art, we get reminded of who we are
                 </p>
                 <h1>poetry</h1>
-
-                <div className="pdf-container">
-                    <iframe
-                        src="/pdfs/Poetry.pdf#page=2&zoom=100&toolbar=0&navpanes=0&scrollbar=0"
-
-                        title="Poetry PDF"
-                        allowFullScreen
-                        loading="lazy"
-                        className="pdf-iframe"
-                    ></iframe>
-                </div>
-                <div className="gallery">
-
-                </div>
+                {poems.map((poem) => {
+                    return (
+                        <Poem date={poem.date} title={poem.title}>
+                            {poem.lines.map((line, i) => (
+                                <div key={i}>{line}</div>
+                            ))}
+                        </Poem>
+                    )
+                })}
             </div>
         </div>
     )

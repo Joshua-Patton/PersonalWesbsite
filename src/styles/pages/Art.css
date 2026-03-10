@@ -27,3 +27,31 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* POEMS */
+.poem {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 18px 20px;
+  border-left: 2px solid #bbb;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.content {
+  white-space: pre-line;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
