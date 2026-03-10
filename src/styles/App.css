@@ -20,32 +20,43 @@ body, html {
     height: auto;
     overflow: hidden;
     background-attachment: fixed;   
-        background-size: 100% 300%; /* double height */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-size: 100% 300%; /* double height */
     background-position: top; 
-    
     
 }
 
 .App[theme="day"]{
-    background-image: url('/src/assets/pictures/mehikesunset.jpg');
+    background-size: cover; 
+    & .page{
+        transition: background-color 0.5s ease, color 0.5s ease; 
+    }
+    & .quote{
+        background-color: rgba(255, 255, 255, 0.459);
+        border-radius: 80px;
+        color: black;
+        & .quote-author{
+            color: black;
+        }
+    }
 }
 .App[theme="night"]{
-    background-image: url('/src/assets/backgrounds/nightsky.jpg');
-    transition: background-color 0.5s ease, color 0.5s ease;
+    & .page{
+        transition: background-color 0.5s ease, color 0.5s ease;              
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    & form{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+        & .quote {
+        mix-blend-mode: difference;
+    }
 }
 
-.App[theme="night"] .page {     
-    transition: background-color 0.5s ease, color 0.5s ease;              
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-.App[theme="night"] form {              
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-.App[theme="day"] .page {     
-    transition: background-color 0.5s ease, color 0.5s ease;              
-}
+
+
 @keyframes backgroundMove {
     from {
         background-position-y: 0%;
