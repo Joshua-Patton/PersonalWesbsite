@@ -57,7 +57,7 @@ label #project-title{
 label {
     display: flex;
     justify-content: center;
-    font-family: 'nothingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Montserrat', 'Arial Narrow Bold', sans-serif;
 }
 
 .learning-image-container {
