@@ -30,7 +30,7 @@ const Title = () => {
     return (
         <>
             <div className="title-container" style={{
-                marginBottom: `${(quote.text.length / 40) + 3}lh` // this count roughly how many lineheights the quote
+                marginBottom: `${(quote.text.length / 40) + 4}lh` // this count roughly how many lineheights the quote
             }}>
                 <div id="left">
 
