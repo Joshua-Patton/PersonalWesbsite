@@ -19,7 +19,8 @@ const Nav = ({ links }) => {
             {links.map((element, index) =>
             (
                 <Link key={index} to={element} onClick={handleItemClick} >
-                    <div className="navItem" id={element} style={{
+                    <div className={`navItem ${pathsList.includes(element) ? "active" : ""}`} id={element} currentTab={pathsList.includes(element)} style={{
+
                         backgroundColor: pathsList.includes(element) ? "rgba(0, 0, 0, 0.500)" : "white",
                         color: pathsList.includes(element) ? "white" : "black",
                         animation: path != "/" ? "navItemClick 1s forwards" : "navItemClickReverse 1s forwards"

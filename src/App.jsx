@@ -8,8 +8,8 @@ import Title from "./components/Title";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
-import daybk from "/src/assets/backgrounds/mehikesunset.jpg"
-import daycompbk from "/src/assets/backgrounds/mehikesunset-compressed.jpg"
+import daybk from "/src/assets/backgrounds/mt_sumbing.jpg"
+import daycompbk from "/src/assets/backgrounds/mt_sumbing.jpg"
 import nightbk from "/src/assets/backgrounds/nightsky.jpg"
 import nightcompbk from "/src/assets/backgrounds/nightsky-compressed.jpg"
 

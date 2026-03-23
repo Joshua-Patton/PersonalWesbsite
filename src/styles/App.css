@@ -1,5 +1,7 @@
 
-
+*:not(p.title:name) {
+    transition: all 0.5s ease;
+}
 /* For Firefox */
 body, html {
     scrollbar-width: none; /* Hides the scrollbar */
@@ -35,7 +37,13 @@ body, html {
         & .quote-author{
             color: black;
         }
-        
+    }
+    & .article {
+        background: #e5e7dc;
+        color: #414142;
+        & .name {
+            color: rgb(0, 0, 0);
+        }
     }
 }
 .App[theme="night"]{
@@ -48,9 +56,21 @@ body, html {
         background-color: rgba(0, 0, 0, 0.8);
         color: white;
     }
-        & .quote {
+    & .quote {
         mix-blend-mode: difference;
     }
+    & .navItem {
+        background-color: rgb(12, 46, 81) !important;
+        color: white !important;
+        &:hover{
+            background-color: rgb(203, 207, 211) !important;
+        }
+    }
+    & .navItem.active {
+        background-color: rgba(108, 103, 126, 0.731) !important;
+
+    }
+
 }
 
 
